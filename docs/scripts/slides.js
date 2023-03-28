@@ -16,11 +16,21 @@ function introSlides() {
   return ['intro/00-TITLE.md'];
 }
 
+function firstPartSlides(){
+  return['01-part1/01-TITLE.md']
+}
+
+function secondPartSlides(){
+  return['02-part2/01-TITLE.md']
+}
+
 function formation() {
   return [
     //
     ...schoolSlides(), //
     ...introSlides(), //
+    ...firstPartSlides(), //
+    ...secondPartSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });

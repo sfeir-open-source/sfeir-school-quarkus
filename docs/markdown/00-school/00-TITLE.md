@@ -1,8 +1,8 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="xxx" -->
+<!-- .slide: class="first-slide" sfeir-level="1" sfeir-techno="Quarkus" -->
 
 # **Welcome to SFEIR School**
 
-## **XXX 200**
+## **Quarkus for beginners**
 
 ##==##
 
