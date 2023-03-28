@@ -11,5 +11,4 @@
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @jefbinomed
 

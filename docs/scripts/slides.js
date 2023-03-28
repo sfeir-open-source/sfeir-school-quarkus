@@ -3,7 +3,8 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 const speakers = [
   // comment speakers before presenting
   'TSI.md',
-  'NDE.md'
+  'NDE.md',
+  'Participant.md'
 ].map((trigram) => `00-school/speakers/${trigram}`);
 
 // One method per module
