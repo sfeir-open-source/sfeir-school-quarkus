@@ -20,6 +20,7 @@ function firstPartSlides(){
   return[
     '01-part1/01-Introduction.md',
     '01-part1/02-module-description.md',
+    '01-part1/03-dev-mode.md',
   ]
 }
 

@@ -1,3 +1,4 @@
+<!-- .slide: class="with-code" -->
 # Description du module généré
 
 - Module Maven avec son `pom.xml`
