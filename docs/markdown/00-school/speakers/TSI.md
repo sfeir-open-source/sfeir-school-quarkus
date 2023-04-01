@@ -8,7 +8,7 @@
 
 ## Tanguy Sironneau
 
-### Developpeur Web
+### Développeur Backend
 
 <!-- .element: class="icon-rule icon-first" -->
 

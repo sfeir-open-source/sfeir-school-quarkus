@@ -17,7 +17,10 @@ function introSlides() {
 }
 
 function firstPartSlides(){
-  return['01-part1/01-TITLE.md']
+  return[
+    '01-part1/01-Introduction.md',
+    '01-part1/02-module-description.md',
+  ]
 }
 
 function secondPartSlides(){
