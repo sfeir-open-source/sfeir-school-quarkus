@@ -7,7 +7,7 @@
 - Des Dockerfile dans `src/main/docker`
 - Le fichier de configuration `application.properties`
 
-Notes
+Notes:
 - Aller voir dans le pom :
   - Définition du bom
   - Extensions listées dans les dépendances

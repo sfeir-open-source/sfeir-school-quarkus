@@ -9,11 +9,11 @@ const speakers = [
 
 // One method per module
 function schoolSlides() {
-  return ['00-school/00-TITLE.md', ...speakers];
+  return ['00-school/00-TITLE.md', ...speakers, "00-school/01-objectives.md"];
 }
 
 function introSlides() {
-  return ['intro/00-TITLE.md'];
+  return ['00-school/00-TITLE.md\''];
 }
 
 function firstPartSlides(){
@@ -31,7 +31,6 @@ function formation() {
   return [
     //
     ...schoolSlides(), //
-    ...introSlides(), //
     ...firstPartSlides(), //
     ...secondPartSlides(), //
   ].map((slidePath) => {

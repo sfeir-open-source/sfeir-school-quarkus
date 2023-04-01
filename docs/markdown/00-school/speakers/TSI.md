@@ -8,7 +8,7 @@
 
 ## Tanguy Sironneau
 
-### Développeur Backend
+### Dev Back
 
 <!-- .element: class="icon-rule icon-first" -->
 
