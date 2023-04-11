@@ -21,6 +21,9 @@ function firstPartSlides(){
     '01-part1/01-Introduction.md',
     '01-part1/02-module-description.md',
     '01-part1/03-dev-mode.md',
+    '01-part1/04-test-application.md',
+    '01-part1/05-package-and-run-opt.md',
+    '01-part1/06-database.md',
   ]
 }
 
