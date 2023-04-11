@@ -4,10 +4,10 @@
 - Create an enum ```CharacterType```
 - Create an entity ```Character```
 - Add following fields 
-  - ```name``` (String, unique)
-  - ```speed``` (int)
-  - ```acceleration``` (float)
-  - ```type``` (CharacterType)
+  - ```name``` (String, unique, not null, size 3-30)
+  - ```speed``` (int, not null)
+  - ```acceleration``` (float, not null, 2 decimal)
+  - ```type``` (CharacterType, not null)
 - Implement a method ```findByName``` with ```find```
 - Implement a method ```findByType``` with ```find```
 - Implement a method ```random``` that returns a random ```Character```

@@ -9,7 +9,7 @@
 
 - To add extensions 
 ```shell
-./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache,hibernate-validator"
+./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache"
 ```
 
 Notes:
@@ -30,6 +30,21 @@ Possible to write its own getter/setter
 
 Reference : https://quarkus.io/guides/hibernate-orm-panache
 
+
+##==##
+
+# Database - Validators
+
+```shell
+./mvnw quarkus:add-extension -Dextensions=hibernate-validator
+```
+- Well known javax.validation.constraints
+  - ```@NotNull```
+  - ```@Size```
+  - ```@Min``` ```@Max```
+  - ```@NotBlank``` ```@NotEmpty```
+  - ...
+
 ##==##
 
 # Database - Entity example
@@ -38,6 +53,7 @@ Reference : https://quarkus.io/guides/hibernate-orm-panache
 @Entity
 public class MyEntity extends PanacheEntity {
 
+    @NotNull
     @Column(length = 30)
     public String name;
     public int speed;
