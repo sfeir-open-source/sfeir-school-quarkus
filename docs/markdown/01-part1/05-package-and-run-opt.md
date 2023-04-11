@@ -1,11 +1,11 @@
 <!-- .slide: class="with-code" -->
-# Packager et lancer l'application
+# Package and run the application
 
-- Packager 
+- Package 
 ```shell
 ./mvnw package
 ```
-- Lancer
+- Run
 ```shell
 java -jar target/quarkus-app/quarkus-run.jar
 ```

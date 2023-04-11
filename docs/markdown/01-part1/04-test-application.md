@@ -1,9 +1,10 @@
 <!-- .slide: class="with-code" -->
-# Tester l'application
+# Test the application
 
-- JUnit
-- RestAssured ou autre librairie
-- @QuarkusTest runner
+- JUnit5
+- RestAssured 
+- Or any Java test librairy
+- @QuarkusTest
 - Continuous testing
 
 In the app :

@@ -5,7 +5,7 @@
 - Panache
   - Extends ```PanacheEntity```
   - Annotate class with ```@Entity```
-  - Annotate fields with ```@Column``` to customize
+  - Annotate public fields with ```@Column``` to customize
 
 - To add extensions 
 ```shell
@@ -13,6 +13,9 @@
 ```
 
 Notes:
+Active record pattern
+Encapsulation at runtime
+Possible to write its own getter/setter
 
 ##==##
 
@@ -24,6 +27,8 @@ Notes:
   - ```findById()```
   - ```count()```
   - ...
+
+Reference : https://quarkus.io/guides/hibernate-orm-panache
 
 ##==##
 

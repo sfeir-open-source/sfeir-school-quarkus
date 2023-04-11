@@ -1,10 +1,10 @@
 <!-- .slide: class="transition bg-pink" -->
 
-# Premier micro-service
+# First micro-service
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Qu'allons nous voir avec ce premier micro-service
+# Content for this first micro-service
 #TODO présentation du premier micro-service 
 
 -> REST API, CRUD operations, imperative 
@@ -18,7 +18,7 @@ Comment créer un application Quarkus
 
 ## Lab
 
-**Goal** : Initialiser le module du premier micro-service
+**Goal** : Initialize the first micro-service
 
-[👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01a-init-character-module/README.md)
+[👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.01-init-character-module/README.md)
 

@@ -1,15 +1,15 @@
 <!-- .slide: class="with-code" -->
-# Description du module généré
+# Content of the generated module
 
-- Module Maven avec son `pom.xml`
-- La Resource / Controller `CharacterResource.java`
-- Une classe de test `CharacterResourceTest.java`
-- Une page `index.html`
-- Des Dockerfile dans `src/main/docker`
-- Le fichier de configuration `application.properties`
+- Maven module with its `pom.xml`
+- A Resource / Controller class `CharacterResource.java`
+- A test class `CharacterResourceTest.java`
+- A web page `index.html`
+- Some Dockerfiles in `src/main/docker`
+- A configuration file `application.properties`
 
 Notes:
-- Aller voir dans le pom :
-  - Définition du bom
-  - Extensions listées dans les dépendances
-- Aller voir la Resource
+- See in the pom.xml :
+  - bom definition
+  - Extensions listed in dependencies
+- See the Resource
