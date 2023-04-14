@@ -24,6 +24,7 @@ function firstPartSlides(){
     '01-part1/04-test-application.md',
     '01-part1/05-package-and-run-opt.md',
     '01-part1/06-database.md',
+    '01-part1/07-crud-api.md',
   ]
 }
 

@@ -35,7 +35,7 @@ cd super-app/characters-microservice
 
 Use maven to add extensions
 ```shell
-./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache"
+./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache,hibernate-validator"
 ```
 
 See that extensions have been added to the pom.xml file and that Quarkus is doing the hot reload.

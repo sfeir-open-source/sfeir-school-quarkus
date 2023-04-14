@@ -3,9 +3,10 @@
 
 - JPA with Hibernate 
 - Panache
-  - Extends ```PanacheEntity```
-  - Annotate class with ```@Entity```
-  - Annotate public fields with ```@Column``` to customize
+  - Annotate class with **```@Entity```**
+  - Extends **```PanacheEntity```** for active record pattern
+  - Implements a **```PanacheRepository<Entity>```** for repository pattern
+  - Annotate public fields with **```@Column```** to customize
 
 - To add extensions 
 ```shell
@@ -13,12 +14,12 @@
 ```
 
 Notes:
-Active record pattern
+Active record pattern or repository pattern
 Encapsulation at runtime
 Possible to write its own getter/setter
 
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Database - Panache
 
 - Automatically provide methods on entities
@@ -28,11 +29,17 @@ Possible to write its own getter/setter
   - ```count()```
   - ...
 
-Reference : https://quarkus.io/guides/hibernate-orm-panache
+<br>
+<br>
+<br>
+Reference : <br> 
+#TODO Finish to read reference
+
+https://quarkus.io/guides/hibernate-orm-panache
 
 
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Database - Validators
 
 ```shell
@@ -46,7 +53,7 @@ Reference : https://quarkus.io/guides/hibernate-orm-panache
   - ...
 
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Database - Entity example
 
 ```java
@@ -75,5 +82,3 @@ public class MyEntity extends PanacheEntity {
 **Goal** : Add needed extensions and create the Character Entity
 
 [👉 Lab 2](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.06-database/README.md)
-
-
