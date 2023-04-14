@@ -1,4 +1,4 @@
-# Tâches à réaliser 
+# Lab - 03
 
 **Goal** : Complete ```Character Service``` then expose a CRUD with ```CharacterResource```
 
