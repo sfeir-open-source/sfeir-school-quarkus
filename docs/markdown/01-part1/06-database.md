@@ -76,7 +76,6 @@ public class MyEntity extends PanacheEntity {
 ##==##
 <!-- .slide: class="exercice" -->
 # Add the first entity
-
 ## Lab
 
 **Goal** : Add needed extensions and create the Character Entity

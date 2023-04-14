@@ -26,11 +26,20 @@ function firstPartSlides(){
     '01-part1/06-database.md',
     '01-part1/07-crud-api.md',
     '01-part1/08-db-configuration.md',
+    '01-part1/09-test-application.md',
   ]
 }
 
 function secondPartSlides(){
   return['02-part2/01-TITLE.md']
+}
+
+function thirdPartSlides(){
+  return['03-part3/01-TITLE.md']
+}
+
+function bonusPartSlides(){
+  return['09-part-bonus/01-TITLE.md']
 }
 
 function formation() {
@@ -39,6 +48,7 @@ function formation() {
     ...schoolSlides(), //
     ...firstPartSlides(), //
     ...secondPartSlides(), //
+    ...thirdPartSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });

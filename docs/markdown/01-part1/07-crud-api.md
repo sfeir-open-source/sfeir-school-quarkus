@@ -136,6 +136,7 @@ To build the **```location```**
 ##==##
 <!-- .slide: class="exercice" -->
 # Create a CRUD API
+## Lab
 
 [👉 Lab 3](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.07-crud-api/README.md)
 
