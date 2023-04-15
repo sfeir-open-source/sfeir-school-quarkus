@@ -1,33 +1,9 @@
-<!-- .slide: class="with-code" -->
-# Database - Transactions
 
-- @Transactional
-  - Class level
-  - Method level 
-  - On any bean
-- Types : 
-  - REQUIRED
-  - REQUIRE_NEW
-  - MANDATORY
-  - SUPPORTS
-  - NOT_SUPPORTED
-  - NEVER
-
-
-Notes:
-- REQUIRED : starts new if none
-- REQUIRE_NEW : suspend current and start new
-- MANDATORY : fail if none
-- SUPPORTS : join existing or continue if none
-- NOT_SUPPORTED : suspend existing and continue
-- NEVER : fail if existing
-
-##==##
 <!-- .slide: class="with-code" -->
 # Service
 
 - **```@ApplicationScoped```** to declare a bean
-- Dependy Injection with **ArC** : build time oriented
+- Dependency Injection with **ArC** : build time oriented
   - ✅ Fail fast
   - ✅ Instant startup
   - ✅ Minimized runtime 
@@ -64,6 +40,31 @@ public CharacterResource(Logger logger){
     this.logger = logger;
 };
 ```
+
+##==##
+<!-- .slide: class="with-code" -->
+# Transactions
+
+- **@Transactional**
+  - Class level
+  - Method level
+  - On any bean
+- Types :
+  - REQUIRED
+  - REQUIRE_NEW
+  - MANDATORY
+  - SUPPORTS
+  - NOT_SUPPORTED
+  - NEVER
+
+
+Notes:
+- REQUIRED : starts new if none
+- REQUIRE_NEW : suspend current and start new
+- MANDATORY : fail if none
+- SUPPORTS : join existing or continue if none
+- NOT_SUPPORTED : suspend existing and continue
+- NEVER : fail if existing
 
 ##==##
 <!-- .slide: class="with-code" -->

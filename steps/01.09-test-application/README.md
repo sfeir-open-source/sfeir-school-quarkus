@@ -1,6 +1,6 @@
 # Lab-05 Implement tests
 
-** Goal ** : Implement the following tests in ```CharacterResourceTest.java```
+**Goal** : Implement the following tests in ```CharacterResourceTest.java```
 
 ```java
 @Test

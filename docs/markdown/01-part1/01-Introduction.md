@@ -1,4 +1,18 @@
 <!-- .slide: class="transition bg-pink" -->
+# Pre-requisites
+
+##==##
+<!-- .slide: class="exercice" -->
+# Check your setup
+
+## Lab
+**Goal** : Verify pre-requisites
+
+[👉 Lab 0](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/00-prerequisites/README.md)
+
+
+##==##
+<!-- .slide: class="transition bg-pink" -->
 
 # First micro-service
 
@@ -15,7 +29,6 @@ Comment créer un application Quarkus
 ##==##
 <!-- .slide: class="exercice" -->
 # Init module
-
 ## Lab
 
 **Goal** : Initialize the first micro-service
