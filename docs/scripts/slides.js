@@ -35,7 +35,7 @@ function secondPartSlides(){
 }
 
 function thirdPartSlides(){
-  return['03-part3/01-TITLE.md']
+  return['03-part3-openapi/01-TITLE.md']
 }
 
 function bonusPartSlides(){
@@ -47,7 +47,7 @@ function formation() {
     //
     ...schoolSlides(), //
     ...firstPartSlides(), //
-    ...secondPartSlides(), //
+    //...secondPartSlides(), //
     ...thirdPartSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
