@@ -45,6 +45,7 @@ https://quarkus.io/guides/hibernate-orm-panache
 ```shell
 ./mvnw quarkus:add-extension -Dextensions=hibernate-validator
 ```
+#TODO standard Jakarta ? 
 - Well known javax.validation.constraints
   - ```@NotNull```
   - ```@Size```

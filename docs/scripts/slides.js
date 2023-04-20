@@ -35,7 +35,7 @@ function secondPartSlides(){
 }
 
 function thirdPartSlides(){
-  return['03-part3-openapi/01-TITLE.md']
+  return['03-part3-openapi/01-open-api.md']
 }
 
 function bonusPartSlides(){

@@ -54,6 +54,7 @@ Si il manque des choses :
   ```
   - Windows
   ```shell
+  #TODO mettre du java 17
   https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-DAF345BA-B3E7-4CF2-B87A-B6662D691840
   ```
 

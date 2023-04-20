@@ -2,6 +2,7 @@
 
 # Bonus 
 
+- Historique Quarkus
 - Build de l'app en mode natif
 - Build production package, configuration %prod.quarkus
 - infrastructure ? 

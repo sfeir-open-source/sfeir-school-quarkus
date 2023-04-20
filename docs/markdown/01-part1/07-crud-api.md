@@ -117,6 +117,7 @@ public class CharactersResource {
 - ```@PUT```
 - ```@DELETE```
 
+#TODO Lien vers les références, retrouver le nom du standard
 
 ##==##
 <!-- .slide: class="with-code" -->
