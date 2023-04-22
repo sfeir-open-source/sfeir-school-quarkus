@@ -45,6 +45,8 @@ public CharacterResource(Logger logger){
 <!-- .slide: class="with-code" -->
 # Transactions
 
+Uses JTA specification
+
 - **@Transactional**
   - Class level
   - Method level
@@ -56,6 +58,9 @@ public CharacterResource(Logger logger){
   - SUPPORTS
   - NOT_SUPPORTED
   - NEVER
+
+Reference : https://www.oracle.com/java/technologies/jta.html
+<!-- .element: class="credits" -->
 
 
 Notes:
@@ -110,6 +115,8 @@ public class CharactersResource {
 <!-- .slide: class="with-code" -->
 # Resource - Annotations
 
+Uses JAX-RS specification
+
 - ```@Path(/api/domain/{variableName})```
 - ```@RestPath Object variableName```
 - ```@GET```
@@ -117,7 +124,8 @@ public class CharactersResource {
 - ```@PUT```
 - ```@DELETE```
 
-#TODO Lien vers les références, retrouver le nom du standard
+Reference: https://www.oracle.com/technical-resources/articles/java/jax-rs.html
+<!-- .element: class="credits" -->
 
 ##==##
 <!-- .slide: class="with-code" -->

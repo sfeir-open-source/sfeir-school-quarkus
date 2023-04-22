@@ -16,6 +16,20 @@
 
 # Quarkus
 
+
+##==##
+<!-- .slide: class="with-code" -->
+# Why Quarkus ? 
+
+- Java 25+ years
+- Applications no longer runs on big machines
+- Density is the new optimization
+- **Goal** : Make Java the leading platform for cloud applications
+<!-- .element: class="list-fragment" -->
+
+Notes:<br>
+Java ecosystem need to be modernized to fit the new way of deploying applications
+
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
@@ -35,7 +49,8 @@ Tailored for GraalVM and HotSpot
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Quarkus Features - Container First
+# Quarkus Features
+## Container First
 
 - Optimized for low memory usage
 - Fast startup times
@@ -48,8 +63,7 @@ Tailored for GraalVM and HotSpot
 Reference: https://quarkus.io/container-first/
 <!-- .element: class="credits" -->
 
-Notes:
-
+Notes:<br>
 Do at build-time what is usually done at runtime
 Avoid reflection and dynamic proxies
 ArC determines the injection graph at build time
@@ -58,7 +72,8 @@ the result is serialized into the executable
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Quarkus Features - Imperative and reactive
+# Quarkus Features
+## Imperative and reactive
 
 - Http Service
 - gRPC
@@ -80,9 +95,11 @@ HTTP microservices, reactive applications, event-driven architectures, serverles
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Quarkus Features - Community and standards
+# Quarkus Features
+## Community and standards
 
-OpenSource
+OpenSource<br>
+<br>
 Built on top of proven standards
 
 - CDI for dependency injection
@@ -102,7 +119,8 @@ Quarkus is not just a consumer it also aims to improve and contribute to existin
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Quarkus Features - Kube-Native
+# Quarkus Features
+## Kube-Native
 
 - Single step deployment with Kubernetes extensions
 - Extensions to deploy serverless microservices
@@ -110,6 +128,7 @@ Quarkus is not just a consumer it also aims to improve and contribute to existin
 - Health and Metrics : SmallRyeHealth and Micrometer
 - Extension to use Kube ConfigMap and Secrets as configuration source
 - Remote Development
+<!-- .element: class="list-fragment" -->
 
 Reference : https://quarkus.io/kubernetes-native/
 <!-- .element: class="credits" -->
@@ -120,7 +139,8 @@ Remote dev to live code, all changes made locally will be visible in the cluster
 
 ##==##
 <!-- .slide: class="with-code" -->
-# Quarkus Features - Developer Joy
+# Quarkus Features
+## Developer Joy
 
 - Live Coding
 - Unified Config 
@@ -131,6 +151,8 @@ Remote dev to live code, all changes made locally will be visible in the cluster
 - Command Line Interface
 <!-- .element: class="list-fragment" -->
 
+Reference : https://quarkus.io/developer-joy/
+<!-- .element: class="credits" -->
 
 Notes:<br>
 A single config file<br>
