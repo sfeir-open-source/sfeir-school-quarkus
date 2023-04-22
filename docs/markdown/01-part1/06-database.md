@@ -29,14 +29,8 @@ Possible to write its own getter/setter
   - ```count()```
   - ...
 
-<br>
-<br>
-<br>
-Reference : <br> 
-#TODO Finish to read reference
-
-https://quarkus.io/guides/hibernate-orm-panache
-
+Reference : https://quarkus.io/guides/hibernate-orm-panache
+<!-- .element: class="credits" -->
 
 ##==##
 <!-- .slide: class="with-code" -->
