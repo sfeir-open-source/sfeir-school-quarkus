@@ -1,10 +1,10 @@
-# Tâches à réaliser 
+# Goal
 
-- Vérifier l'installation des pré-requis
+- Check you setup
 
 # Tips
 
-Lancer les commandes suivantes pour vérifier que tout le nécessaire est installé
+Launch following commands to check if everything needed is installed on your machine
 
 - JDK 17+
 ```shell
@@ -17,13 +17,13 @@ echo $JAVA_HOME
 mvn -version
 ```
 
-- Docker et docker compose
+- Docker and docker compose
 ```shell
 docker version
 docker compose version
 ```
 
-Optionel :
+Optional :
 
 - GraalVM
 ```shell
@@ -42,7 +42,7 @@ kubectl version
 
 # TP
 
-Si il manque des choses : 
+If something is missing : 
 - JDK 17 
   - MacOS
   ```shell
@@ -54,8 +54,7 @@ Si il manque des choses :
   ```
   - Windows
   ```shell
-  #TODO mettre du java 17
-  https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-DAF345BA-B3E7-4CF2-B87A-B6662D691840
+  https://www.oracle.com/java/technologies/downloads/#java17
   ```
 
 - Maven
@@ -67,3 +66,7 @@ Si il manque des choses :
   ```shell
   https://maven.apache.org/install.html
   ```
+  
+- Docker
+
+  https://docs.docker.com/engine/install/
