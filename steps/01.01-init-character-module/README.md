@@ -1,21 +1,12 @@
 # Tâches à réaliser 
 
-- Clone the Git repository or init a local maven project 
 - Initialize the Quarkus project
-
-# Tips
-
-- #TODO Lien vers le repo Git
 
 # TP
 
-
-Go to the super-app directory
-```shell
-cd super-app
-```
-
-Use maven to create the Quarkus project
+- Download sfeir-school-quarkus-100.zip and unzip it
+- Go to the sfeir-school-quarkus-100 directory
+- Use maven to create the Quarkus project
 ```shell
 mvn io.quarkus:quarkus-maven-plugin:2.16.5.Final:create \
      -DprojectGroupId=com.sfeir.quarkus100 \
@@ -25,7 +16,7 @@ mvn io.quarkus:quarkus-maven-plugin:2.16.5.Final:create \
      -Dextensions="resteasy-reactive-jackson"
 ```
 
-Add the new module in the parent pom.xml
+- Add the new module in the sfeir-school-quarkus-100 pom.xml
 
 ```shell
 <modules>
@@ -33,7 +24,7 @@ Add the new module in the parent pom.xml
 </modules>
 ```
 
-Launch the app from `characters-micro-service` directory
+- Launch the app from `characters-micro-service` directory
 
 ```shell
 cd characters-micro-service

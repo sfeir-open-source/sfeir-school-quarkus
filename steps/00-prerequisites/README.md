@@ -40,9 +40,7 @@ curl --version
 kubectl version 
 ```
 
-# TP
-
-If something is missing : 
+## If something is missing : 
 - JDK 17 
   - MacOS
   ```shell

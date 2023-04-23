@@ -34,10 +34,7 @@ Credentials
 <p class="center">
 C'est quand la pause ?<br>
 Quand est-ce qu'on mange ?<br>
-Tour de table ...
+Ils sont ou les slides ? <br><br>
 </p>
-<br><br>
 
-**Feuille de présence (obligatoire)** <!-- .element: class="center" -->
-
-https://bit.ly/sfeir-Quarkus <!-- .element: class="center" -->
+<p style="text-align: center;font-size:48px;font-weight:bold">https//shorturl.at/nFKZ7</p>
