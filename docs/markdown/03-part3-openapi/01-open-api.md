@@ -9,17 +9,24 @@
 - Extension **smallrye-openapi**
 - Accessible on **/q/openapi**
 
+```shell
+./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"
+```
+
 ##==##
 <!-- .slide: class="with-code" -->
 # OpenAPI with Quarkus
 
-- Eclipse MicroProfile OpenAPI
+- Standard : Eclipse MicroProfile OpenAPI
 - Basic annotations : 
   - @Operation
   - @APIResponse
   - @Parameter
   - @RequestBody
   - @Tag
+
+Reference : [Microprofile annotations](https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.asciidoc#annotations)
+<!-- .element: class="credits" -->
 
 ##==##
 <!-- .slide: class="with-code" -->
@@ -39,8 +46,8 @@
     }
 ```
 
-Reference : <br>
-[Microprofile annotations](https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.asciidoc#annotations)
+Reference : [Microprofile annotations](https://github.com/eclipse/microprofile-open-api/blob/master/spec/src/main/asciidoc/microprofile-openapi-spec.asciidoc#annotations)
+<!-- .element: class="credits" -->
 
 
 ##==##

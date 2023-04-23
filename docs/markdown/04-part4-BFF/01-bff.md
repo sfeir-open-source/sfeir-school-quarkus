@@ -10,10 +10,14 @@
 <!-- .slide: class="with-code" -->
 # Http Communication
 
-- With MicroProfile RestClient
+- Standard : MicroProfile RestClient
 - Annotate an interface with `@RegisterRestClient`
-- Use JAX-RS annotation to declare end points : `@Path`, `@Get`...
+- Use JAX-RS annotations to declare end points : `@Path`, `@Get`...
 - Inject dependency with `@RestClient`
+
+Reference : https://github.com/eclipse/microprofile-rest-client
+<!-- .element: class="credits" -->
+
 
 ##==##
 <!-- .slide: class="with-code" -->
@@ -66,7 +70,33 @@ Notes:<br>
 
 ##==##
 <!-- .slide: class="with-code" -->
+# How to Mock ? 
+
+With an alternative bean
+
+##==##
+<!-- .slide: class="with-code" -->
 # How to Mock ?
+
+With an alternative bean
+
+Use annotations on the alternative bean
+
+- @Alternative
+- @Priority(1)
+<br>
+or 
+- @Mock stereotype 
+
+Notes:<br>
+@Mock stereotype contains @Alternative, @Priority(1), @Dependent
+
+
+##==##
+<!-- .slide: class="with-code" -->
+# How to Mock ?
+
+With an alternative bean
 
 Use annotations on the alternative bean
 
@@ -89,8 +119,10 @@ public class MyWebClientMock implements MyWebClient {
     }
 }
 ```
-Notes:<br>
-@Mock stereotype contains @Alternative, @Priority(1), @Dependent
+
+##==##
+<!-- .slide: class="with-code" -->
+# Fault Tolerance & Timeout
 
 ##==##
 <!-- .slide: class="with-code" -->

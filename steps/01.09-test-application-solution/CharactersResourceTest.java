@@ -76,7 +76,7 @@ public class CharactersResourceTest {
     }
 
     @Test
-    public void create_status_is_201_and_location_contains_api_base_path() {
+    public void create_status_is_201_and_location_header_contains_api_base_path() {
 
         Character toCreate = new Character();
         toCreate.name = "newCharacter";

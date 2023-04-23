@@ -1,28 +1,28 @@
+<!-- .slide: class="with-code" -->
+# Service
 
+##==##
 <!-- .slide: class="with-code" -->
 # Service
 
 - **```@ApplicationScoped```** to declare a bean
-- Dependency Injection with **ArC** : build time oriented
-  - ✅ Fail fast
-  - ✅ Instant startup
-  - ✅ Minimized runtime 
-  - ✅ Optimized Code Paths and Metadata Structures
+- Dependency Injection
+  - Standard : **CDI** with **ArC**
+  - Build time oriented
+    - ✅ Fail fast
+    - ✅ Instant startup
+    - ✅ Minimized runtime 
+    - ✅ Optimized Code Paths and Metadata Structures
 
-<br>
-<br>
-<br>
-Reference :
+Reference : https://quarkus.io/blog/quarkus-dependency-injection and https://quarkus.io/guides/cdi-reference
+<!-- .element: class="credits" -->
 
-https://quarkus.io/blog/quarkus-dependency-injection
-<br>
-https://quarkus.io/guides/cdi-reference
 
 Notes:
+- CDI : Context and Dependency Injection
 - Fail fast : validated at build time -> no error in production
 - Minimize runtime : 7% of the Weld 3.1.1 CDI implementation reference, 72 classes
 - Optimized Code Paths and Metadata Structures : aim to develop those optimizations
-- Extensions Point ? limit 
 - Arc is not a full CDI implementation
 
 ##==##
@@ -45,7 +45,11 @@ public CharacterResource(Logger logger){
 <!-- .slide: class="with-code" -->
 # Transactions
 
-Uses JTA specification
+##==##
+<!-- .slide: class="with-code" -->
+# Transactions
+
+Standard : JTA
 
 - **@Transactional**
   - Class level
@@ -64,6 +68,7 @@ Reference : https://www.oracle.com/java/technologies/jta.html
 
 
 Notes:
+- JTA : Java Transaction API
 - REQUIRED : starts new if none
 - REQUIRE_NEW : suspend current and start new
 - MANDATORY : fail if none
@@ -97,7 +102,7 @@ public class EntityService {
 ##==##
 <!-- .slide: class="with-code" -->
 # Resource - Rappel
-```java
+```java [2,5-6]
 
 @Path("/api/characters")
 public class CharactersResource {
@@ -115,7 +120,7 @@ public class CharactersResource {
 <!-- .slide: class="with-code" -->
 # Resource - Annotations
 
-Uses JAX-RS specification
+Standard : JAX-RS
 
 - ```@Path(/api/domain/{variableName})```
 - ```@RestPath Object variableName```
@@ -127,6 +132,9 @@ Uses JAX-RS specification
 Reference: https://www.oracle.com/technical-resources/articles/java/jax-rs.html
 <!-- .element: class="credits" -->
 
+Notes:
+JAX-RS : Java API for RESTful Webservices
+
 ##==##
 <!-- .slide: class="with-code" -->
 # Resource - Response
@@ -137,11 +145,7 @@ With static methods :
   - **```.ok(T entity)```**
   - **```.created(URI location)```**
   - **```.noContent()```**
-  - ...
-
-To build the **```location```**
-- Inject **```UriInfo```** with **```@Context```** annotation
-- Then use **```.getAbsolutePathBuilder()```**
+  - and more
 
 ##==##
 <!-- .slide: class="exercice" -->

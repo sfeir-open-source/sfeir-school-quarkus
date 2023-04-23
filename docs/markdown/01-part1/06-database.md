@@ -1,19 +1,22 @@
 <!-- .slide: class="with-code" -->
 # Database - Entities
 
-- JPA with Hibernate 
+- Standard : JPA with Hibernate 
 - Panache
   - Annotate class with **```@Entity```**
   - Extends **```PanacheEntity```** for active record pattern
   - Implements a **```PanacheRepository<Entity>```** for repository pattern
   - Annotate public fields with **```@Column```** to customize
 
-- To add extensions 
+Extensions :
+- jdbc-postgresql
+- hibernate-orm-panache
 ```shell
 ./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache"
 ```
 
 Notes:
+JPA : Java Persistence API
 Active record pattern or repository pattern
 Encapsulation at runtime
 Possible to write its own getter/setter
@@ -35,17 +38,21 @@ Reference : https://quarkus.io/guides/hibernate-orm-panache
 ##==##
 <!-- .slide: class="with-code" -->
 # Database - Validators
-
-```shell
-./mvnw quarkus:add-extension -Dextensions=hibernate-validator
-```
-#TODO standard Jakarta ? 
+- Standard : Jakarta Bean Validation
 - Well known javax.validation.constraints
   - ```@NotNull```
   - ```@Size```
   - ```@Min``` ```@Max```
   - ```@NotBlank``` ```@NotEmpty```
-  - ...
+  - and more
+
+Extension : hibernate-validator
+```shell
+./mvnw quarkus:add-extension -Dextensions=hibernate-validator
+```
+
+Reference : https://beanvalidation.org/
+<!-- .element: class="credits" -->
 
 ##==##
 <!-- .slide: class="with-code" -->

@@ -1,6 +1,8 @@
-# Lab - 03
+# Lab - 03 CRUD API
 
 **Goal** : Complete ```Character Service``` then expose a CRUD with ```CharacterResource```
+
+**Time** : 30~45 minutes
 
 ## Steps
 
@@ -22,7 +24,9 @@
 
 For ```CharacterResource``` : 
 - Use ```/random``` path
-- Inject ```@Context UriInfo``` for the POST to create the content of the response
+- To build the **```location```** header of the POST
+  - Inject **```UriInfo```** with **```@Context```** annotation
+  - Then use **```.getAbsolutePathBuilder()```**
 
 ## Test your API
 

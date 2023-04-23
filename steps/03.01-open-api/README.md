@@ -2,7 +2,7 @@
 
 **Goal** : Implement the following tests in ```CharacterResourceTest.java```
 
-**Time** : 10~20 minutes
+**Time** : 20~30 minutes
 
 - Add extension ```smallrye-openapi```
 ```shell

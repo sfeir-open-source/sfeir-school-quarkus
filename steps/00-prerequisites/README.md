@@ -1,6 +1,8 @@
-# Goal
+# Lab-00 Check prerequisites
 
-- Check you setup
+**Goal** Check you setup
+
+**Time** 5~20 minutes
 
 # Tips
 

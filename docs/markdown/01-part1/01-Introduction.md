@@ -54,10 +54,10 @@ Tailored for GraalVM and HotSpot
 
 - Optimized for low memory usage
 - Fast startup times
-- Build Time processing
-- Reduction in Reflection Usage
-- GraalVM Native images support
-- Native image preboot
+  - Build Time processing
+  - Reduction in Reflection Usage
+  - GraalVM Native images support
+  - Native image preboot
 <!-- .element: class="list-fragment" -->
 
 Reference: https://quarkus.io/container-first/

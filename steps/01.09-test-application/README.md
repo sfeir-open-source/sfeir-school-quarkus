@@ -2,6 +2,8 @@
 
 **Goal** : Implement the following tests in ```CharacterResourceTest.java```
 
+**Time** : 20~30 minutes
+
 ```java
 @Test
 public void random_returns_a_not_empty_body() {
@@ -28,5 +30,5 @@ public void delete_status_code_is_204_then_get_returns_204(){
 
 Bonus :
 - Add tests :
-  - create_status_is_201_and_location_contains_api_base_path
+  - create_status_is_201_and_location_header_contains_api_base_path
   - update_status_is_200_and_contains_new_character

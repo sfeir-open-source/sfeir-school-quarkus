@@ -1,10 +1,12 @@
-# Tâches à réaliser 
+# Lab-01 Check prerequisites
 
-- Initialize the Quarkus project
+**Goal** Initialize the Quarkus project
 
-# TP
+**Time** 10~20 minutes
 
-- Download sfeir-school-quarkus-100.zip and unzip it
+## Steps
+
+- Download [startup archive](sfeir-school-quarkus-100.zip) and unzip it
 - Go to the sfeir-school-quarkus-100 directory
 - Use maven to create the Quarkus project
 ```shell
