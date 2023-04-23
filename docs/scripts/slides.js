@@ -38,6 +38,10 @@ function thirdPartSlides(){
   return['03-part3-openapi/01-open-api.md']
 }
 
+function fourthPartSlides(){
+  return['04-part4-BFF/01-bff.md']
+}
+
 function bonusPartSlides(){
   return['09-part-bonus/01-TITLE.md']
 }
@@ -49,6 +53,7 @@ function formation() {
     ...firstPartSlides(), //
     //...secondPartSlides(), //
     ...thirdPartSlides(), //
+    ...fourthPartSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });
