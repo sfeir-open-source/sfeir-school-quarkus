@@ -2,8 +2,7 @@
 
 # Présentation
 
-![speaker](./assets/images/jf.jpg)
-![badge](./assets/images/gde.png)
+![speaker](./assets/images/tsiro.JPG)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
 ## Tanguy Sironneau

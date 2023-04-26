@@ -46,6 +46,7 @@ Reference: https://quarkus.io/
 
 Notes:
 Tailored for GraalVM and HotSpot
+Unifies imperative and reactive : both in the same application
 
 ##==##
 <!-- .slide: class="with-code" -->
