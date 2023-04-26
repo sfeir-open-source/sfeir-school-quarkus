@@ -37,7 +37,7 @@ import com.sfeir.quarkus100.racer.client.Character;
 import com.sfeir.quarkus100.racer.client.Vehicle;
 import io.smallrye.common.constraint.NotNull;
 
-public record Racer(@NotNull Character character, Vehicle vehicle) {
+public record Racer(@NotNull Character character, @NotNull Vehicle vehicle) {
 
 }
 ```
@@ -69,8 +69,8 @@ public class RacerResource {
 ```
 
 - Now create a **CharacterAPI** interface, the web client for the **/api/character** route.
-- Add it the **random()** method that call **/api/character/random** route.
-- Do the same for the reactive api **/api/vehicle/random** in a **VehicleAPI** interface.
+- Add it a **random()** method that call **/api/character/random** route.
+- Do the same for the api **/api/vehicle/random** in a **VehicleAPI** interface.
 - Create the **RacerService** that will use previously created web clients to create a random racer in a **random()** method.
 - Add the following test in RacerResourceTest
 ```java
@@ -81,10 +81,12 @@ void random_racer_success() {
         .then()
         .statusCode(OK.getStatusCode())
         .contentType(APPLICATION_JSON)
-  #TODO complete with vehicle
         .body("character.name", Is.is(CharacterAPIMock.RANDOM_NAME))
         .body("character.speed", Is.is(CharacterAPIMock.SPEED))
-        .body("character.acceleration", Is.is(CharacterAPIMock.ACCELERATION));
+        .body("character.acceleration", Is.is(CharacterAPIMock.ACCELERATION))
+        .body("vehicle.name", Is.is(VehicleAPIMock.RANDOM_NAME))
+        .body("vehicle.speed", Is.is(VehicleAPIMock.SPEED))
+        .body("vehicle.acceleration", Is.is(VehicleAPIMock.ACCELERATION));
 }
 ```
 - Create missing web client **mocks** for the test
@@ -121,6 +123,30 @@ public class CharacterClient {
     public Character random() {
         Log.info("Call random character");
         return charactersAPI.random();
+    }
+}
+```
+```java
+import io.quarkus.logging.Log;
+import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
+import org.eclipse.microprofile.faulttolerance.Retry;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
+
+import javax.enterprise.context.ApplicationScoped;
+import java.time.temporal.ChronoUnit;
+
+@ApplicationScoped
+public class VehicleClient {
+
+    private final VehiclesAPI api;
+
+    public VehicleClient(@RestClient VehiclesAPI api) {
+        this.api = api;
+    }
+
+    public Vehicle random() {
+        Log.info("Call random vehicle");
+        return api.random();
     }
 }
 ```

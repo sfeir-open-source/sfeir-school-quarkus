@@ -42,6 +42,10 @@ function fourthPartSlides(){
   return['04-part4-BFF/01-bff.md']
 }
 
+function conclusion(){
+  return['05-part5-conclusion/01-conclusion.md']
+}
+
 function bonusPartSlides(){
   return['09-part-bonus/01-TITLE.md']
 }
@@ -54,6 +58,7 @@ function formation() {
     //...secondPartSlides(), //
     ...thirdPartSlides(), //
     ...fourthPartSlides(), //
+    ...conclusion(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });

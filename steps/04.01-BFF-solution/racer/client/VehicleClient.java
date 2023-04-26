@@ -9,11 +9,11 @@ import javax.enterprise.context.ApplicationScoped;
 import java.time.temporal.ChronoUnit;
 
 @ApplicationScoped
-public class CharacterClient {
+public class VehicleClient {
 
-    private final CharacterAPI api;
+    private final VehiclesAPI api;
 
-    public CharacterClient(@RestClient CharacterAPI api) {
+    public VehicleClient(@RestClient VehiclesAPI api) {
         this.api = api;
     }
 
@@ -21,8 +21,8 @@ public class CharacterClient {
             delay = 10,
             delayUnit = ChronoUnit.SECONDS)
     @Retry(maxRetries = 3, delay = 200)
-    public Character random() {
-        Log.info("Call random character");
+    public Vehicle random() {
+        Log.info("Call random vehicle");
         return api.random();
     }
 }

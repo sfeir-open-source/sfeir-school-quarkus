@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 @RegisterRestClient
 @ApplicationScoped
-public interface CharactersAPI {
+public interface CharacterAPI {
 
     @GET
     @Path("/random")
