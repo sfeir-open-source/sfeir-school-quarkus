@@ -6,7 +6,8 @@
 * Create an imperative microservice
 * Create a reactive microservice
 * Add OpenAPI documentation
-* Create a microservice that call the two others
+* Let's go to the subatomic world !
+  * Create a microservice that call the two others with angular front-app
 <!-- .element: class="list-fragment" -->
 
 Notes: 

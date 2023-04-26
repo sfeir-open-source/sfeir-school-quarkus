@@ -31,7 +31,7 @@ function firstPartSlides(){
 }
 
 function secondPartSlides(){
-  return['02-part2/01-TITLE.md']
+  return['02-part2-reactive/01-Introduction.md']
 }
 
 function thirdPartSlides(){
@@ -47,7 +47,7 @@ function conclusion(){
 }
 
 function bonusPartSlides(){
-  return['09-part-bonus/01-TITLE.md']
+  return['09-part-bonus/01-Introduction.md']
 }
 
 function formation() {
@@ -55,7 +55,7 @@ function formation() {
     //
     ...schoolSlides(), //
     ...firstPartSlides(), //
-    //...secondPartSlides(), //
+    ...secondPartSlides(), //
     ...thirdPartSlides(), //
     ...fourthPartSlides(), //
     ...conclusion(), //

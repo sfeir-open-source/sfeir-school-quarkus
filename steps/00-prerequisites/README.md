@@ -19,6 +19,11 @@ echo $JAVA_HOME
 mvn -version
 ```
 
+- Quarkus CLI
+```shell
+quarkus --version
+```
+
 - Docker and docker compose
 ```shell
 docker version
@@ -66,7 +71,17 @@ kubectl version
   ```shell
   https://maven.apache.org/install.html
   ```
-  
+
+- Quarkus CLI
+  - MacOs
+  ```shell
+  brew install quarkusio/tap/quarkus
+  ```
+  - Linux Debian / Windows
+  ```shell
+  https://quarkus.io/guides/cli-tooling
+  ```
+
 - Docker
 
   https://docs.docker.com/engine/install/

@@ -55,14 +55,14 @@ Unifies imperative and reactive : both in the same application
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
-## Container First
+## Benefit No. 1 : Container First
 
 - Optimized for low memory usage
 - Fast startup times
-  - Build Time processing
-  - Reduction in Reflection Usage
-  - GraalVM Native images support
-  - Native image preboot
+- Build Time processing
+- Reduction in Reflection Usage
+- GraalVM Native images support
+- Native image preboot
 <!-- .element: class="list-fragment" -->
 
 Reference: https://quarkus.io/container-first/
@@ -79,7 +79,7 @@ the result is serialized into the executable
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
-## Imperative and reactive
+## Benefit No. 2 : Imperative and reactive
 
 - Http Service
 - gRPC
@@ -103,7 +103,7 @@ HTTP microservices, reactive applications, event-driven architectures, serverles
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
-## Community and standards
+## Benefit No. 3 : Community and standards
 
 OpenSource<br>
 <br>
@@ -128,7 +128,7 @@ Quarkus is not just a consumer it also aims to improve and contribute to existin
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
-## Kube-Native
+## Benefit No. 4 : Kube-Native
 
 - Single step deployment with Kubernetes extensions
 - Extensions to deploy serverless microservices
@@ -149,7 +149,7 @@ Remote dev to live code, all changes made locally will be visible in the cluster
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
-## Developer Joy
+## Benefit No. 5 : Developer Joy
 
 - Live Coding
 - Unified Config 
