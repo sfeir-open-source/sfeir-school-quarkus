@@ -10,6 +10,8 @@
 
 [👉 Lab 0](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/00-prerequisites/README.md)
 
+Notes:
+tanguy
 
 ##==##
 <!-- .slide: class="transition bg-pink" -->
@@ -28,6 +30,7 @@
 <!-- .element: class="list-fragment" -->
 
 Notes:<br>
+tanguy
 Java ecosystem need to be modernized to fit the new way of deploying applications
 
 ##==##
@@ -45,6 +48,7 @@ Reference: https://quarkus.io/
 <!-- .element: class="credits" -->
 
 Notes:
+tanguy
 Tailored for GraalVM and HotSpot
 Unifies imperative and reactive : both in the same application
 
@@ -65,6 +69,7 @@ Reference: https://quarkus.io/container-first/
 <!-- .element: class="credits" -->
 
 Notes:<br>
+nathan
 Do at build-time what is usually done at runtime
 Avoid reflection and dynamic proxies
 ArC determines the injection graph at build time
@@ -91,6 +96,7 @@ https://quarkus.io/guides/quarkus-reactive-architecture
 
 
 Notes:<br>
+tanguy
 Client / server is not the only model anymore : 
 HTTP microservices, reactive applications, event-driven architectures, serverless
 
@@ -116,6 +122,7 @@ Reference: https://quarkus.io/standards/
 <!-- .element: class="credits" -->
 
 Notes:<br>
+nathan
 Quarkus is not just a consumer it also aims to improve and contribute to existing technologies
 
 ##==##
@@ -135,6 +142,7 @@ Reference : https://quarkus.io/kubernetes-native/
 <!-- .element: class="credits" -->
 
 Notes:<br>
+tanguy
 Extensions for Kubernetes that simplifies the deployment<br>
 Remote dev to live code, all changes made locally will be visible in the cluster environment
 
@@ -156,6 +164,7 @@ Reference : https://quarkus.io/developer-joy/
 <!-- .element: class="credits" -->
 
 Notes:<br>
+tanguy
 A single config file<br>
 DevServices automatic provisioning 
 
@@ -173,6 +182,8 @@ DevServices automatic provisioning
 
 Comment créer une application Quarkus
 
+Notes:<br>
+tanguy
 
 ##==##
 <!-- .slide: class="exercice" -->

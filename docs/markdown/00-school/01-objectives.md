@@ -8,3 +8,6 @@
 * Add OpenAPI documentation
 * Create a microservice that call the two others
 <!-- .element: class="list-fragment" -->
+
+Notes: 
+tanguy
