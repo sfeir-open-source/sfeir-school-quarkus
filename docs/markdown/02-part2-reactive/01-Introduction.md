@@ -4,6 +4,17 @@
 
 ##==##
 <!-- .slide: class="with-code" -->
+# What is it ? 
+
+* Reactive programming is a event programmation with hight performance
+  * your request is never blocked, she's not expecting anything
+  * the user get the response so fast
+
+![quarkus not reactive](./assets/images/quarkus_not_reactive.png)
+
+![quarkus_reactive](./assets/images/quarkus_reactive.png)
+##==##
+<!-- .slide: class="with-code" -->
 # Why do you use it ?
 
 * Quarkus recommend to use it to manage handle asynchronous data streams and events

@@ -79,6 +79,13 @@ the result is serialized into the executable
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features
+## Build time details
+
+![Build time classic vs build time quarkus](./assets/images/classic_build_time_vs_quarkus_build_time.png)
+
+##==##
+<!-- .slide: class="with-code" -->
+# Quarkus Features
 ## Benefit No. 2 : Imperative and reactive
 
 - Http Service

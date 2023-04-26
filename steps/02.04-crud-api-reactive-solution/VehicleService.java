@@ -4,10 +4,8 @@ import io.smallrye.mutiny.Uni;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class VehicleService {
@@ -23,24 +21,21 @@ public class VehicleService {
         return vehicleRepository.findAllVehicle();
     }
 
-    public Uni<Vehicle> findByName(Long id) {
+    public Uni<Vehicle> findById(Long id) {
         return vehicleRepository.findVehicleById(id);
     }
 
-    public void deleteById(Long id) {
-        vehicleRepository.deleteVehicleById(id);
+    public Uni<Boolean> deleteById(Long id) {
+        return vehicleRepository.deleteVehicleById(id);
     }
 
 
-    public void create(Vehicle vehicle) {
-        vehicleRepository.createVehicle(vehicle);
+    public Uni<Vehicle> create(Vehicle vehicle) {
+        return vehicleRepository.createVehicle(vehicle);
     }
 
     public void update(Long id, Vehicle vehicle) {
-        Vehicle toUpdate = vehicleRepository.findVehicleById(id).await().indefinitely();
-        toUpdate.name = vehicle.name;
-        toUpdate.speed = vehicle.speed;
-        toUpdate.acceleration = vehicle.acceleration;
+        vehicleRepository.updateVehicle(id, vehicle);
     }
 
 

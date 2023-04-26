@@ -1,5 +1,6 @@
 import com.sfeir.kart.pojo.Vehicle;
 import com.sfeir.kart.service.VehicleService;
+import io.quarkus.hibernate.reactive.panache.common.runtime.ReactiveTransactional;
 import io.smallrye.mutiny.Uni;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -25,15 +26,16 @@ public class VehicleWs {
     }
 
     @GET
-    @Path("{name}")
-    public Uni<Vehicle> findByName(@PathParam("name") Long id) {
-        return vehicleService.findByName(id);
+    @Path("{id}")
+    public Uni<Vehicle> findById(@PathParam("id") Long id) {
+        return vehicleService.findById(id);
     }
 
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
+    @ReactiveTransactional
     public Uni<Response> create(@Valid Vehicle vehicle) {
         vehicleService.create(vehicle);
         return Uni.createFrom().item(Response.ok().build());
@@ -43,6 +45,7 @@ public class VehicleWs {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
+    @ReactiveTransactional
     public void update(@PathParam("id") Long id, Vehicle vehicle) {
         vehicleService.update(id, vehicle);
     }
@@ -51,8 +54,9 @@ public class VehicleWs {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public void delete(@PathParam("id") Long id) {
-        vehicleService.deleteById(id);
+    @ReactiveTransactional
+    public Uni<Response> delete(@PathParam("id") Long id) {
+        return vehicleService.deleteById(id).replaceWith(Response.noContent().build());
     }
 
     @GET
