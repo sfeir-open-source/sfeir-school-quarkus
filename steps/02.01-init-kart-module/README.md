@@ -9,13 +9,13 @@
 - Use quarkus CLI to create the Quarkus project
 
 ```shell
-mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
+    mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
      -DprojectGroupId=com.sfeir.quarkus100 \
      -DprojectArtifactId=karts-micro-service \
      -DclassName="com.sfeir.quarkus100.KartsResource" \
      -Dpath="api/karts" \
      -Dextensions="resteasy-reactive-jackson"
-    ```
+ ```
 
 - Add the new module in the sfeir-school-quarkus-100 pom.xml
 

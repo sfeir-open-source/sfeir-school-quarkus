@@ -25,5 +25,5 @@ cd karts-micro-service
   - ```name``` (String, unique, not null, size 3-30)
   - ```speed``` (float, not null, 2 decimal)
   - ```acceleration``` (float, not null, 2 decimal)
-- Implement a method ```random``` that returns a random ```Vehicle```
+- You can caught the import.sql in this folder to your resources folder
 

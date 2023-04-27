@@ -12,7 +12,7 @@
   - ```findAll()```
   - ```findByName(String name)```
   - Bonus :
-    - ```update(Vehicle vehicle)```
+    - ```update(Long id,Vehicle vehicle)```
     - ```deleteByName(String name)```
     - ```create(Vehicle vehicle)```
 
