@@ -24,7 +24,7 @@
 - Use the following curl requests :
 
 ```shell
-curl --location 'http://localhost:8081/api/karts' \
+curl --location 'http://localhost:8084/api/karts' \
 --header 'Content-Type: application/json' \
 --data '{
         "name": "test",
@@ -34,15 +34,15 @@ curl --location 'http://localhost:8081/api/karts' \
 ```
 
 ```shell
-curl 'http://localhost:8081/api/kars/1'
+curl 'http://localhost:8084/api/kars/1'
 ```
 
 ```shell
-curl --location 'http://localhost:8081/api/kars/random'
+curl --location 'http://localhost:8084/api/kars/random'
 ```
 
 ```shell
-curl --location --request PUT 'http://localhost:8081/api/kars' \
+curl --location --request PUT 'http://localhost:8084/api/kars' \
 --header 'Content-Type: application/json' \
 --data '{
         "id":1,
@@ -53,7 +53,7 @@ curl --location --request PUT 'http://localhost:8081/api/kars' \
 ```
 
 ```shell
-curl --location --request DELETE 'http://localhost:8081/api/kars/1' \
+curl --location --request DELETE 'http://localhost:8084/api/kars/1' \
 --header 'Content-Type: application/json' \
 --data '{
         "id":1,

@@ -55,5 +55,5 @@ Reference : [Microprofile annotations](https://github.com/eclipse/microprofile-o
 # Write some documentation
 ## Lab
 
-[👉 Lab X](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/03.01-open-api/README.md)
+[👉 Lab 10](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/03.01-open-api/README.md)
 

@@ -67,4 +67,9 @@ MyService myservice
     }
 ```
 
+**Goal** : Create your first Repository
+
+[👉 Lab 9](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/02.04-crud-repository-reactive/README.md)
+
+
 

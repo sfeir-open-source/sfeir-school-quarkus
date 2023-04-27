@@ -1,4 +1,4 @@
-# Lab-0x Enrich documentation
+# Lab-10 Enrich documentation
 
 **Goal** : Implement the following tests in ```CharacterResourceTest.java```
 

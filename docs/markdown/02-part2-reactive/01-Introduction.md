@@ -47,5 +47,5 @@
 
 **Goal** : Initialize the second micro-service
 
-[👉 Lab 6](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/02.01-init-kart-module/README.md)
+[👉 Lab 6](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/02.01-init-kart-module/README.md)
 

@@ -31,7 +31,13 @@ function firstPartSlides(){
 }
 
 function secondPartSlides(){
-  return['02-part2-reactive/01-Introduction.md']
+  return['02-part2-reactive/01-Introduction.md',
+    '02-part2-reactive/02-module-description.md',
+    '02-part2-reactive/03-dev-mode.md',
+    '02-part2-reactive/04-entity.md',
+    '02-part2-reactive/05-repository.md',
+    '02-part2-reactive/06-crud-api.md'
+  ]
 }
 
 function thirdPartSlides(){

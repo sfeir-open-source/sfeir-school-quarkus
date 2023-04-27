@@ -37,6 +37,6 @@
 
 **Goal** : Create your first Repository
 
-[👉 Lab 8](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/02.03-repository-reactive/README.md)
+[👉 Lab 8](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/02.03-repository-reactive/README.md)
 
 

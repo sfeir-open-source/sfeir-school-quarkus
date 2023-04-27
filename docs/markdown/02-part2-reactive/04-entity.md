@@ -65,4 +65,4 @@ public class MyEntity {
 
 **Goal** : Create your first Entity
 
-[👉 Lab 7](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/02.02-database-reactive/README.md)
+[👉 Lab 7](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/02.02-database-reactive/README.md)

@@ -2,6 +2,6 @@
 # Play with Database
 ## Lab
 
-[👉 Lab 4](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.08-db-configuration/README.md)
+[👉 Lab 4](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.08-db-configuration/README.md)
 
 

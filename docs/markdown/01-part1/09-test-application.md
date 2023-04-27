@@ -37,6 +37,6 @@ public class CharactersResourceTest {
 # Complete test Suite
 ## Lab
 
-[👉 Lab 5](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.09-test-application/README.md)
+[👉 Lab 5](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.09-test-application/README.md)
 
 

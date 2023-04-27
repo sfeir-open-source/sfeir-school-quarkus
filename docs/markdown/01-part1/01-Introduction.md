@@ -8,7 +8,7 @@
 ## Lab
 **Goal** : Verify pre-requisites
 
-[👉 Lab 0](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/00-prerequisites/README.md)
+[👉 Lab 0](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/00-prerequisites/README.md)
 
 Notes:
 tanguy
@@ -122,6 +122,7 @@ Graal SDK : Graal compiler
 <!-- .slide: class="with-code" -->
 # Quarkus Features
 ## last release
+
 * 26 april 2023, Quarkus 3.0.1Final are released
 * many change are coming, for example
   * support Jakarta 10 (instead of Quarkus 2 support jakarta 8)
@@ -250,5 +251,5 @@ tanguy
 
 **Goal** : Initialize the first micro-service
 
-[👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.01-init-character-module/README.md)
+[👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.01-init-character-module/README.md)
 

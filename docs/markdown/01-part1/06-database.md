@@ -82,4 +82,4 @@ public class MyEntity extends PanacheEntity {
 
 **Goal** : Add needed extensions and create the Character Entity
 
-[👉 Lab 2](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/speaker/steps/01.06-database/README.md)
+[👉 Lab 2](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.06-database/README.md)
