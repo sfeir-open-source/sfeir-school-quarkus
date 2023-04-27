@@ -14,7 +14,7 @@ Don't forget to replace all xxx by your techno
 
 The text below is the template you could use for your readme
 
-# SFEIR School XXX
+# SFEIR School Quarkus
 
 <p align="center">
  <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="SFEIR School logo">
@@ -26,11 +26,20 @@ The text below is the template you could use for your readme
 
 # Slides
 
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-xxx/).
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-quarkus/).
 
 ## Develop
 
-To run docs locally, go in directory `docs` and run `npx serve` of if you don't have node, you can use docker `docker-compose up`, and open slides on http://localhost:5000/.
+To run docs locally, go in directory `docs` and run 
+```shell
+npx serve
+``` 
+or if you don't have node, you can use docker 
+```shell
+cd docs
+docker-compose up
+``` 
+Then open slides on http://localhost:3000/.
 
 ## Workshop
 

@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "6d236b54-3b70-419a-ae53-b626f9879b6f",
+		"name": "Quarkus Sfeir School - Character",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/characters/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Character",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/characters/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get random Character",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/characters/random",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create character",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"luigi\",\n    \"type\": \"MEDIUM\",\n    \"speed\": 7,\n    \"acceleration\": 2.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update character",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"name\": \"luigi\",\n    \"type\": \"MEDIUM\",\n    \"speed\": 8,\n    \"acceleration\": 2.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Character",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"luigi\",\n    \"type\": \"MEDIUM\",\n    \"speed\": 8,\n    \"acceleration\": 2.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/characters/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
