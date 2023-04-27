@@ -66,6 +66,10 @@ MyService myservice
         return Uni.createFrom().item(Response.ok().build());
     }
 ```
+##==##
+<!-- .slide: class="exercice" -->
+# Create your subatomic API !
+## Lab
 
 **Goal** : Create your first Repository
 
