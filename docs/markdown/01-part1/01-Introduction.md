@@ -176,11 +176,6 @@ DevServices automatic provisioning
 ##==##
 <!-- .slide: class="with-code" -->
 # Content for this first micro-service
-#TODO présentation du premier micro-service 
-
--> REST API, CRUD operations, imperative 
-
-Comment créer une application Quarkus
 
 Notes:<br>
 tanguy
