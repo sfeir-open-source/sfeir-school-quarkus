@@ -1,15 +1,16 @@
 import com.sfeir.kart.pojo.Vehicle;
 import com.sfeir.kart.service.VehicleService;
+import io.quarkus.hibernate.reactive.panache.common.WithTransaction;
 import io.quarkus.hibernate.reactive.panache.common.runtime.ReactiveTransactional;
 import io.smallrye.mutiny.Uni;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.transaction.Transactional;
-import javax.validation.Valid;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 import java.util.List;
 
 @Path(ApiRegistration.REST_API + ApiRegistration.REST_VEHICLE)
@@ -35,7 +36,7 @@ public class VehicleWs {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @ReactiveTransactional
+    @WithTransaction
     public Uni<Response> create(@Valid Vehicle vehicle) {
         vehicleService.create(vehicle);
         return Uni.createFrom().item(Response.ok().build());
@@ -45,16 +46,17 @@ public class VehicleWs {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @ReactiveTransactional
-    public void update(@PathParam("id") Long id, Vehicle vehicle) {
+    @WithTransaction
+    public Uni<Response> update(@PathParam("id") Long id, Vehicle vehicle) {
         vehicleService.update(id, vehicle);
+        return Uni.createFrom().item(Response.ok().build());
     }
 
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @ReactiveTransactional
+    @WithTransaction
     public Uni<Response> delete(@PathParam("id") Long id) {
         return vehicleService.deleteById(id).replaceWith(Response.noContent().build());
     }

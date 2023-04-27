@@ -9,8 +9,13 @@
 - Use quarkus CLI to create the Quarkus project
 
 ```shell
-quarkus create app com.sfeir.quarkus100:karts-micro-service --extension="quarkus-resteasy-reactive,resteasy-reactive-jackson" -Dpath="api/karts"
-```
+mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
+     -DprojectGroupId=com.sfeir.quarkus100 \
+     -DprojectArtifactId=karts-micro-service \
+     -DclassName="com.sfeir.quarkus100.KartsResource" \
+     -Dpath="api/karts" \
+     -Dextensions="resteasy-reactive-jackson"
+    ```
 
 - Add the new module in the sfeir-school-quarkus-100 pom.xml
 
@@ -21,6 +26,12 @@ quarkus create app com.sfeir.quarkus100:karts-micro-service --extension="quarkus
 </modules>
 ```
 
+- add new line on application.properties of karts-micro-service
+
+```shell
+quarkus.http.port=8084
+```
+
 - Launch the app from `karts-micro-service` directory
 
 ```shell
@@ -28,10 +39,10 @@ cd karts-micro-service
 quarkus dev
 ```
 
-Call url `http://localhost:8080/hello`
+Call url `http://localhost:8084/api/karts`
 
 ```shell
-curl http://localhost:8080/hello
+curl http://localhost:8084/api/karts
 ```
 
 

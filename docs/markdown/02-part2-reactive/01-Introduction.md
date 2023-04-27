@@ -7,7 +7,7 @@
 # What is it ? 
 
 * Reactive programming is a event programmation with hight performance
-  * your request is never blocked, she's not expecting anything
+  * your request is never blocked
   * the user get the response so fast
 
 ![quarkus not reactive](./assets/images/quarkus_not_reactive.png)
@@ -25,9 +25,6 @@
 
 * Quarkus Reactive is a extension => use it with other extension
 
-* Reactives Streams : an asynchronous stream processing API. 
-  * This API allows efficient management of asynchronous data streams and events.
-
 * Vert.x optimize the I/O
 ##==##
 
@@ -36,8 +33,11 @@
 
 * REST API, CRUD operations, reactive , reactive driver
 
-* new dependency
+* new dependencies
   * resteasy-reactive
+  * resteasy-reactive-jackson
+
+* Goal : Crud for kart
 
 ##==##
 <!-- .slide: class="exercice" -->

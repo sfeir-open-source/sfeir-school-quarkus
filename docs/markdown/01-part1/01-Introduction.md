@@ -26,6 +26,7 @@ tanguy
 - Java 25+ years
 - Applications no longer runs on big machines
 - Density is the new optimization
+- Quarkus team work with GraalVM for native build
 - **Goal** : Make Java the leading platform for cloud applications
 <!-- .element: class="list-fragment" -->
 
@@ -35,6 +36,7 @@ Java ecosystem need to be modernized to fit the new way of deploying application
 
 ##==##
 <!-- .slide: class="with-code" -->
+
 # Quarkus Features
 
 - Container First
@@ -77,12 +79,66 @@ Native image preboot : the native executable has already run most of the startup
 the result is serialized into the executable
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Quarkus Features
 ## Build time details
 
 ![Build time classic vs build time quarkus](./assets/images/classic_build_time_vs_quarkus_build_time.png)
+<!-- .element: class="list-fragment" -->
 
+References :
+https://quarkus.io/
+##==##
+<!-- .slide: class="with-code" -->
+
+# Quarkus Features
+## quarkus performance
+
+
+![](../../assets/images/performance_quarkus.png)
+
+
+<!-- .element: class="list-fragment" -->
+Reference: devoxx 2022
+
+<!-- .element: class="credits" -->
+Notes:<br>
+quantity of RAM used 
+Resident State Side
+##==##
+# Quarkus Features
+## Architecture
+
+![](../../assets/images/quarkus_reactive_core.png)
+
+
+<!-- .element: class="credits" -->
+Notes:<br>
+Jandex : index of classe
+Gizmo : generate byte code
+Graal SDK : Graal compiler
+##==##
+<!-- .slide: class="with-code" -->
+# Quarkus Features
+## last release
+* 26 april 2023, Quarkus 3.0.1Final are released
+* many change are coming, for example
+  * support Jakarta 10 (instead of Quarkus 2 support jakarta 8)
+    * CDI Lite
+    * Build optimization
+* Hibernate ORM 6.2 (instead of 5 for quarkus 2)
+* new dev ui
+* support maven 9 (minimal 3.8.2)
+* ```java
+  quarkus deploy
+  mvn quarkus:deploy
+  ```
+<!-- .element: class="list-fragment" -->
+
+
+References :
+https://quarkus.io/blog/quarkus-3-0-final-released/
 ##==##
 <!-- .slide: class="with-code" -->
 # Quarkus Features

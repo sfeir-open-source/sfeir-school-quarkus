@@ -13,16 +13,11 @@ cd karts-micro-service
 - Add extensions
 
 ```shell
-quarkus ext add quarkus-reactive-mysql-client quarkus-hibernate-reactive-rest-data-panache
+./mvnw quarkus:add-extension -Dextensions="reactive-pg-client,hibernate-reactive-rest-data-panache"
 ```
 
 - See that extensions have been added to the pom.xml file and that Quarkus is doing the hot reload
-- Add in application.properties, following settings 
-```shell
-quarkus.datasource.db-kind=mariadb
-quarkus.datasource.devservices.username=quarkus
-quarkus.datasource.devservices.password=quarkus
-```
+ 
 
 - Create an entity ```Vehicle```
 - With following fields

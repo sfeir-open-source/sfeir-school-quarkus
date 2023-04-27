@@ -2,8 +2,8 @@ import com.sfeir.kart.pojo.Vehicle;
 import com.sfeir.kart.repository.VehicleRepository;
 import io.smallrye.mutiny.Uni;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.List;
 import java.util.Random;
 
