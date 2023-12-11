@@ -1,5 +1,6 @@
 <!-- .slide: class="with-code" -->
-# Testing the application 
+
+# Testing the application
 
 ```java
 @QuarkusTest
@@ -16,9 +17,10 @@ public class CharactersResourceTest {
 }
 ```
 
-
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Testing the application
 
 - **@QuarkusTest**
@@ -31,12 +33,12 @@ public class CharactersResourceTest {
   - header()
   - contentType()
 
-
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Complete test Suite
+
 ## Lab
 
-[👉 Lab 5](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.09-test-application/README.md)
-
-
+[👉 Lab 01.06](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.06-test-application/README.md)
