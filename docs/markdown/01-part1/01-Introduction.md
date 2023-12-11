@@ -137,28 +137,22 @@ Graal SDK : Graal compiler
 
 <!-- .slide: class="with-code" -->
 
-# Quarkus Features
+# Quarkus history
 
 ## last release
 
-- 26 april 2023, Quarkus 3.0.1Final are released
-- many change are coming, for example
-  - support Jakarta 10 (instead of Quarkus 2 support jakarta 8)
-    - CDI Lite
-    - Build optimization
-- Hibernate ORM 6.2 (instead of 5 for quarkus 2)
-- new dev ui
-- support maven 9 (minimal 3.8.2)
-- ```java
-  quarkus deploy
-  mvn quarkus:deploy
-  ```
+- March 2019, Quarkus 0.12 (initial release)
+- November 2019, Quarkus 1.0
+- June 2021, Quarkus 2.0
+- April 26, 2023, Quarkus 3.0
+- December 6, 2023, Quarkus 3.6.1
 
-```
+<br/>
 <!-- .element: class="list-fragment" -->
 
 References :
-https://quarkus.io/blog/quarkus-3-0-final-released/
+https://quarkus.io/blog/
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -196,6 +190,7 @@ OpenSource<br>
 <br>
 Built on top of proven standards
 
+- Jakarta
 - CDI for dependency injection
 - JAX-RS annotations for REST endpoints
 - JPA for persistent entities
@@ -243,7 +238,7 @@ Remote dev to live code, all changes made locally will be visible in the cluster
 
 ## Benefit No. 5 : Developer Joy
 
-- Live Coding
+- Live Restart
 - Unified Config
 - Opinionated
 - Dev UI
@@ -268,14 +263,6 @@ DevServices automatic provisioning
 
 ##==##
 
-<!-- .slide: class="with-code" -->
-
-# Content for this first micro-service
-
-Notes:
-
-##==##
-
 <!-- .slide: class="exercice" -->
 
 # Init module
@@ -284,5 +271,4 @@ Notes:
 
 **Goal** : Initialize the first micro-service
 
-[👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.01-init-character-module/README.md)
-```
+[👉 Lab 01.01](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.01-init-character-module/README.md)
