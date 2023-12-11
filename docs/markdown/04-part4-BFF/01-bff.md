@@ -1,13 +1,17 @@
 <!-- .slide: class="transition bg-pink" -->
+
 # Racer microservice - Back For Front
 
-
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Http Communication
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Http Communication
 
 - Standard : MicroProfile RestClient
@@ -16,14 +20,16 @@
 - Inject dependency with `@RestClient`
 
 Reference : https://github.com/eclipse/microprofile-rest-client
+
 <!-- .element: class="credits" -->
 
-
 ##==##
-<!-- .slide: class="with-code" -->
-# Scopes 
 
-Define the scope on the interface with annotations 
+<!-- .slide: class="with-code" -->
+
+# Scopes
+
+Define the scope on the interface with annotations
 
 - @Dependent (default)
 - @Singleton
@@ -31,14 +37,17 @@ Define the scope on the interface with annotations
 - @RequestScoped
 
 Or in application.properties<br>
+
 ```text
 com.sfeir.quarkus100.racer.client.MyWebClient/mp-rest/scope=javax.inject.Singleton
 ```
 
-Notes:<br>
+Notes:
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Example
 
 ```java
@@ -52,6 +61,7 @@ public interface MyWebClient {
     MyResource get();
 }
 ```
+
 ```java [4-5]
 @ApplicationScoped
 public class MyService {
@@ -62,20 +72,27 @@ public class MyService {
     [...]
 }
 ```
-Notes:<br>
+
+Notes:
 
 ##==##
+
 <!-- .slide: class="with-code" -->
-# How to Mock ? 
+
+# How to Mock ?
 
 ##==##
+
 <!-- .slide: class="with-code" -->
-# How to Mock ? 
+
+# How to Mock ?
 
 With an alternative bean
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # How to Mock ?
 
 With an alternative bean
@@ -84,16 +101,17 @@ Use annotations on the alternative bean
 
 - @Alternative
 - @Priority(1)
-<br>
-or 
-- @Mock stereotype 
+  <br>
+  or
+- @Mock stereotype
 
-Notes:<br>
+Notes:
 @Mock stereotype contains @Alternative, @Priority(1), @Dependent
 
-
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # How to Mock ?
 
 With an alternative bean
@@ -102,9 +120,9 @@ Use annotations on the alternative bean
 
 - @Alternative
 - @Priority(1)
-<br>
-or 
-- @Mock stereotype 
+  <br>
+  or
+- @Mock stereotype
 
 Create the alternative bean in the same package in **test sources**
 
@@ -112,7 +130,7 @@ Create the alternative bean in the same package in **test sources**
 @Mock
 @RestClient
 public class MyWebClientMock implements MyWebClient {
-    
+
     @Override
     public MyResource get() {
         [...]
@@ -121,11 +139,15 @@ public class MyWebClientMock implements MyWebClient {
 ```
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Fault Tolerance & Timeout
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Fault Tolerance & Timeout
 
 ```shell
@@ -148,10 +170,12 @@ public Response getMyResource() {
 }
 ```
 
-Notes:<br>
+Notes:
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Retry & CircuitBreaker
 
 ```java [10|11-14]
@@ -175,17 +199,16 @@ public class MyResourceClient {
 }
 ```
 
-Notes:<br>
+Notes:
 Circuit Breaker will suspend the call to the method if error conditions are met.<br>
 After delay it will make another call, if the call fails it suspends again.
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Create the Back For Front microservice
+
 ## Lab
 
 [👉 Lab 11](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/04.01/README.md)
-
-
-
-

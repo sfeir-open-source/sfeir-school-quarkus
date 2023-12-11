@@ -1,17 +1,21 @@
-
 <!-- .slide: class="with-code" -->
+
 # Configuration injection
 
-Notes:<br>
+Notes:
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # CLI
 
-Notes:<br>
+Notes:
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Build native
 
-Notes:<br>
+Notes:

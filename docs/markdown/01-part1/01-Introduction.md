@@ -35,7 +35,7 @@ Notes:
 - **Goal** : Make Java the leading platform for cloud applications
 <!-- .element: class="list-fragment" -->
 
-Notes:<br>
+Notes:
 Java ecosystem need to be modernized to fit the new way of deploying applications
 
 ##==##
@@ -79,7 +79,7 @@ Reference: https://quarkus.io/container-first/
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 Do at build-time what is usually done at runtime
 Avoid reflection and dynamic proxies
 ArC determines the injection graph at build time
@@ -116,7 +116,7 @@ Reference: devoxx 2022
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 quantity of RAM used
 Resident State Side
 ##==##
@@ -129,7 +129,7 @@ Resident State Side
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 Jandex : index of classe
 Gizmo : generate byte code
 Graal SDK : Graal compiler
@@ -152,6 +152,8 @@ Graal SDK : Graal compiler
 - ```java
   quarkus deploy
   mvn quarkus:deploy
+  ```
+
 ```
 <!-- .element: class="list-fragment" -->
 
@@ -178,7 +180,7 @@ https://quarkus.io/guides/quarkus-reactive-architecture
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 Client / server is not the only model anymore :
 HTTP microservices, reactive applications, event-driven architectures, serverless
 
@@ -206,7 +208,7 @@ Reference: https://quarkus.io/standards/
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 Quarkus is not just a consumer it also aims to improve and contribute to existing technologies
 
 ##==##
@@ -229,7 +231,7 @@ Reference : https://quarkus.io/kubernetes-native/
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 Extensions for Kubernetes that simplifies the deployment<br>
 Remote dev to live code, all changes made locally will be visible in the cluster environment
 
@@ -254,7 +256,7 @@ Reference : https://quarkus.io/developer-joy/
 
 <!-- .element: class="credits" -->
 
-Notes:<br>
+Notes:
 A single config file<br>
 DevServices automatic provisioning
 
@@ -270,7 +272,7 @@ DevServices automatic provisioning
 
 # Content for this first micro-service
 
-Notes:<br>
+Notes:
 
 ##==##
 
@@ -283,3 +285,4 @@ Notes:<br>
 **Goal** : Initialize the first micro-service
 
 [👉 Lab 1](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/01.01-init-character-module/README.md)
+```
