@@ -1,4 +1,4 @@
-# Lab-02 Create a first entity
+# Lab 01.03 - Create a first entity
 
 **Goal** Discover the Panache way of accessing data
 

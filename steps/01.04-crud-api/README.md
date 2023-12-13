@@ -1,32 +1,34 @@
-# Lab - 03 CRUD API
+# Lab 01.04 - CRUD API
 
-**Goal** : Complete ```Character Service``` then expose a CRUD with ```CharacterResource```
+**Goal** : Complete `Character Service` then expose a CRUD with `CharacterResource`
 
 **Time** : 30~45 minutes
 
 ## Steps
 
-- Create a ```CharacterService```
-- Implement following methods : 
-  - ```random()```
-  - ```persist(Character character)```
-  - Bonus :
-    - ```update(Character character)```
-    - ```delete(Character character)```
+- Create a `CharacterService`
+- Implement following methods :
 
-- Use ```@Valid``` annotation where needed to validate ```Character```
-- Use ```@Transactional``` where it fits
-  - ```persist``` and ```delete``` should be REQUIRED
-  - ```random``` should be SUPPORT
-- Expose those newly implemented ```CharacterService``` methods through ```CharacterResource```
+  - `random()`
+  - `persist(Character character)`
+  - Bonus :
+    - `update(Character character)`
+    - `delete(Character character)`
+
+- Use `@Valid` annotation where needed to validate `Character`
+- Use `@Transactional` where it fits
+  - `persist` and `delete` should be REQUIRED
+  - `random` should be SUPPORT
+- Expose those newly implemented `CharacterService` methods through `CharacterResource`
 
 ## Tips
 
-For ```CharacterResource``` : 
-- Use ```/random``` path
-- To build the **```location```** header of the POST
-  - Inject **```UriInfo```** with **```@Context```** annotation
-  - Then use **```.getAbsolutePathBuilder()```**
+For `CharacterResource` :
+
+- Use `/random` path
+- To build the **`location`** header of the POST
+  - Inject **`UriInfo`** with **`@Context`** annotation
+  - Then use **`.getAbsolutePathBuilder()`**
 
 ## Test your API
 
@@ -75,4 +77,3 @@ curl --location --request DELETE 'http://localhost:8080/api/characters/1' \
     "acceleration": 2.5
 }'
 ```
-

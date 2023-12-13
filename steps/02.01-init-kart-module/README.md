@@ -1,29 +1,28 @@
-# Lab-06 init second microservice
+# Lab 02.01 - init second microservice
 
 **Goal** Initialize the Quarkus project
 
 **Time** 10~20 minutes
 
 ## Steps
+
 - Go to the super-app dir in the last zip
 - Use quarkus CLI to create the Quarkus project
 
 ```shell
-    mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
-     -DprojectGroupId=com.sfeir.quarkus100 \
-     -DprojectArtifactId=karts-micro-service \
-     -DclassName="com.sfeir.quarkus100.KartsResource" \
-     -Dpath="api/karts" \
-     -Dextensions="resteasy-reactive-jackson"
- ```
+quarkus create app \
+  -x resteasy-reactive-jackson quarkus-smallrye-openapi \
+  -o=. \
+  com.sfeir.quarkus.karts:karts-micro-service
 
-- Add the new module in the sfeir-school-quarkus-100 pom.xml
+# or
 
-```shell
-<modules>
-  <module>super-app/characters-micro-service</module>
-  <module>super-app/karts-micro-service</module>
-</modules>
+mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
+  -DprojectGroupId=com.sfeir.quarkus \
+  -DprojectArtifactId=karts-micro-service \
+  -DclassName="com.sfeir.quarkus.karts.KartsResource" \
+  -Dpath="api/karts" \
+  -Dextensions="resteasy-reactive-jackson,quarkus-smallrye-openapi"
 ```
 
 - add new line on application.properties of karts-micro-service
@@ -39,11 +38,10 @@ cd karts-micro-service
 quarkus dev
 ```
 
+- (if you choose `quarkus create app`) rename class `GreetingResource` to `KartsResource` and endpoint `/hello` to `/api/karts`
+
 Call url `http://localhost:8084/api/karts`
 
 ```shell
 curl http://localhost:8084/api/karts
 ```
-
-
-

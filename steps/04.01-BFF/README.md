@@ -1,23 +1,30 @@
-# Lab-11 Racer microservice
+# Lab 04.01 - Racer microservice
 
 **Goal** : Implement the racer microservice
 
 **Time** : 30 minutes
 
-Create the new module : 
+Create the new module :
 
 ```shell
 mvn io.quarkus:quarkus-maven-plugin:2.16.6.Final:create \
-  -DprojectGroupId=com.sfeir.quarkus100 \
+  -DprojectGroupId=com.sfeir.quarkus \
   -DprojectArtifactId=rest-racers \
-  -DclassName="com.sfeir.quarkus100.racer.RacerResource" \
+  -DclassName="com.sfeir.quarkus.racer.RacerResource" \
   -Dpath="api/racers" \
-  -Dextensions="quarkus-resteasy-reactive-jackson,quarkus-rest-client-reactive-jackson,smallrye-openapi"
+  -Dextensions="quarkus-resteasy-reactive-jackson,quarkus-rest-client-reactive-jackson,smallrye-fault-tolerance,smallrye-openapi"
 ```
 
-Add following classes to the module : 
+- add new line on application.properties of rest-racers
+
+```shell
+quarkus.http.port=8088
+```
+
+- Add following classes to the module :
 
 - In the package **racer.client**
+
 ```java
 @Schema(description = "The racing character")
 public record Character(@NotNull String name, int speed, float acceleration) {
@@ -33,8 +40,8 @@ public record Vehicle(@NotNull String name, int speed, float acceleration) {
 - In the package **racer** :
 
 ```java
-import com.sfeir.quarkus100.racer.client.Character;
-import com.sfeir.quarkus100.racer.client.Vehicle;
+import com.sfeir.quarkus.racer.client.Character;
+import com.sfeir.quarkus.racer.client.Vehicle;
 import io.smallrye.common.constraint.NotNull;
 
 public record Racer(@NotNull Character character, @NotNull Vehicle vehicle) {
@@ -43,7 +50,7 @@ public record Racer(@NotNull Character character, @NotNull Vehicle vehicle) {
 ```
 
 ```java
-package com.sfeir.quarkus100.racer;
+package com.sfeir.quarkus.racer;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -61,18 +68,20 @@ public class RacerResource {
     }
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/random")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response random() {
       return Response.ok(service.random()).build();
     }
 }
 ```
 
-- Now create a **CharacterAPI** interface, the web client for the **/api/character** route.
-- Add it a **random()** method that call **/api/character/random** route.
-- Do the same for the api **/api/vehicle/random** in a **VehicleAPI** interface.
-- Create the **RacerService** that will use previously created web clients to create a random racer in a **random()** method.
-- Add the following test in RacerResourceTest
+- Now create a `CharacterAPI` interface, the web client for the `/api/character` route.
+- Add it a `random()` method that call `/api/character/random` route.
+- Do the same for the api `/api/vehicle/random` in a `VehicleAPI` interface.
+- Create the `RacerService` that will use previously created web clients to create a random racer in a `random()` method.
+- Add the following test in `RacerResourceTest`
+
 ```java
 @Test
 void random_racer_success() {
@@ -89,19 +98,22 @@ void random_racer_success() {
         .body("vehicle.acceleration", Is.is(VehicleAPIMock.ACCELERATION));
 }
 ```
+
 - Create missing web client **mocks** for the test
 - Add the fallback dependency
+
 ```shell
 ./mvnw quarkus:add-extension -Dextensions="smallrye-fault-tolerance"
 ```
-- Add **fallback** methods for **CharacterAPI** and **VehicleAPI**
+
+- Add **fallback** methods for `CharacterAPI` and `VehicleAPI`
 - Close character and vehicle running services to test your fallback
-- Add a timeout on the **RacerResource** method
+- Add a timeout on the `RacerResource` method
 - Test the timeout with a `Thread.sleep()`
 - Remove the `Thread.sleep()`
 
+- Add `CharacterClient` and `VehicleClient`
 
-- Add **CharacterClient** and **VehicleClient** 
 ```java
 import io.quarkus.logging.Log;
 import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
@@ -119,13 +131,14 @@ public class CharacterClient {
     public CharacterClient(@RestClient CharactersAPI charactersAPI) {
         this.charactersAPI = charactersAPI;
     }
-    
+
     public Character random() {
         Log.info("Call random character");
         return charactersAPI.random();
     }
 }
 ```
+
 ```java
 import io.quarkus.logging.Log;
 import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
@@ -150,10 +163,10 @@ public class VehicleClient {
     }
 }
 ```
-- Use those **Client** instead of **API** in the **Service**
-- Add **@Retry** on **random()** 
-- Call the api to see the retries in action
-- Add **@CircuitBreaker** on **random()** with a delay of 10 seconds
-- Call the api to see the circuit breaker in action : the **Call random** log should not be displayed.
-- Wait 10 seconds to make another call, the log should be displayed again but only once. 
 
+- Use those **Client** instead of **API** in the **Service**
+- Add `@Retry` on `random()`
+- Call the api to see the retries in action
+- Add `@CircuitBreaker` on `random()` with a delay of 10 seconds
+- Call the api to see the circuit breaker in action : the **Call random** log should not be displayed.
+- Wait 10 seconds to make another call, the log should be displayed again but only once.

@@ -1,23 +1,27 @@
 <!-- .slide: class="with-code" -->
+
 # Crud Api Reactive
 
-* Quarkus API REST Architecture likely similar to Spring
-  * Resource (Ws)
-  * Service
-  * Repository
-  * Models
+- Quarkus API REST Architecture likely similar to Spring
 
-* business logic are in service.
-* Transaction
-  * **```@WithTransaction```** (in quarkus 3)
-  * **```@ReactiveTransaction```** (in quarkus 2)
+  - Resource (Ws)
+  - Service
+  - Repository
+  - Models
+
+- business logic are in service.
+- Transaction
+  - **`@WithTransaction`** (in quarkus 3)
+  - **`@ReactiveTransaction`** (in quarkus 2)
 
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Service
 
-* Service link Resources with Repository
-  * it's a bean
+- Service link Resources with Repository
+  - it's a bean
 
 ```java
    @ApplicationScoped
@@ -26,16 +30,18 @@
    }
 ```
 
-* some code contains all business logic
-  
+- some code contains all business logic
+
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Dependency Injection
 
-- **```@ApplicationScoped```** to declare a bean
+- **`@ApplicationScoped`** to declare a bean
 - Dependency Injection
   - Standard : **CDI** with **ArC**
-  - Via **```@Inject```** on a field
+  - Via **`@Inject`** on a field
 
 ```java
 @Path('api/test')
@@ -47,13 +53,16 @@ MyService myservice
 
 }
 ```
+
 ##==##
+
 <!-- .slide: class="with-code" -->
+
 # Transaction
 
-* Your API must 
-  * Use Transaction in Resource
-  * Use Session in Repository
+- Your API must
+  - Use Transaction in Resource
+  - Use Session in Repository
 
 ```java
     @PUT
@@ -66,14 +75,15 @@ MyService myservice
         return Uni.createFrom().item(Response.ok().build());
     }
 ```
+
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Create your subatomic API !
+
 ## Lab
 
 **Goal** : Create your first Repository
 
-[👉 Lab 9](https://github.com/sfeir-open-source/sfeir-school-quarkus/tree/main/steps/02.04-crud-api-reactive/README.md)
-
-
-
+[👉 Lab 02.03](https://github.com/sfeir-open-source/sfeir-school-quarkus/tree/main/steps/02.03-crud-api-reactive/README.md)

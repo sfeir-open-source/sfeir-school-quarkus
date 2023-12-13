@@ -1,4 +1,4 @@
-# Lab-01 Create your first Resource
+# Lab 01.02 - Create your first Resource
 
 **Goal** Discover resource creation
 
