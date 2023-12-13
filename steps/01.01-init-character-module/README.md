@@ -1,4 +1,4 @@
-# Lab-01 Init a quakus project
+# Lab 01.01 - Init a quakus project
 
 **Goal** Initialize a Quarkus project
 

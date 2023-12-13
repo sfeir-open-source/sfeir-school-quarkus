@@ -1,4 +1,4 @@
-# Lab - 04 Play with database
+# Lab 01.05 - Play with database
 
 **Goal** : Configure database
 
@@ -26,5 +26,3 @@ quarkus.hibernate-orm.database.generation=drop-and-create
 - Copy / Paste the `import.sql` file in the resources directory
 - Wait for the application reload or force it with a new request
 - Go back to your editor and see that the character table has been filled with `import.sql` content
-
-- It's also possible to use the `import.sql` only on dev environment by using `%dev.quarkus.datasource.devservices.init-script-path=dev-import.sql` config key. You can check this guide for more detail: https://quarkus.io/guides/config-reference#profiles

@@ -39,7 +39,7 @@ Define the scope on the interface with annotations
 Or in application.properties<br>
 
 ```text
-com.sfeir.quarkus100.racer.client.MyWebClient/mp-rest/scope=javax.inject.Singleton
+com.sfeir.quarkus.racer.client.MyWebClient/mp-rest/scope=javax.inject.Singleton
 ```
 
 Notes:
@@ -53,7 +53,7 @@ Notes:
 ```java
 @Path("/api/resources")
 @Produces(MediaType.APPLICATION_JSON)
-@RegisterRestClient
+@RegisterRestClient(baseUri = "http://localhost:8084")
 @Singleton
 public interface MyWebClient {
 
@@ -74,6 +74,50 @@ public class MyService {
 ```
 
 Notes:
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Example
+
+```java[3-3]
+@Path("/api/resources")
+@Produces(MediaType.APPLICATION_JSON)
+@RegisterRestClient
+@Singleton
+public interface MyWebClient {
+
+    @GET
+    MyResource get();
+}
+```
+
+```properties
+quarkus.rest-client."org.acme.rest.client.MyWebClient".url=http://localhost:8084
+```
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Example
+
+```java[3-3]
+@Path("/api/resources")
+@Produces(MediaType.APPLICATION_JSON)
+@RegisterRestClient(configKey = "my-web-client")
+@Singleton
+public interface MyWebClient {
+
+    @GET
+    MyResource get();
+}
+```
+
+```properties
+quarkus.rest-client.my-web-client.url=http://localhost:8084
+```
 
 ##==##
 
@@ -211,4 +255,4 @@ After delay it will make another call, if the call fails it suspends again.
 
 ## Lab
 
-[👉 Lab 11](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/04.01/README.md)
+[👉 Lab 04.01](https://github.com/sfeir-open-source/sfeir-school-quarkus/blob/main/steps/04.01/README.md)
