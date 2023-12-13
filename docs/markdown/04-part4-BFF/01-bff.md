@@ -81,7 +81,7 @@ Notes:
 
 # Example
 
-```java[3-3]
+```java[3]
 @Path("/api/resources")
 @Produces(MediaType.APPLICATION_JSON)
 @RegisterRestClient
@@ -103,7 +103,7 @@ quarkus.rest-client."org.acme.rest.client.MyWebClient".url=http://localhost:8084
 
 # Example
 
-```java[3-3]
+```java[3]
 @Path("/api/resources")
 @Produces(MediaType.APPLICATION_JSON)
 @RegisterRestClient(configKey = "my-web-client")
