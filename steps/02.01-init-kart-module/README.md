@@ -1,6 +1,6 @@
 # Lab 02.01 - init second microservice
 
-**Goal** Initialize the Quarkus project
+**Goal** Initialize a Quarkus project
 
 **Time** 10~20 minutes
 
