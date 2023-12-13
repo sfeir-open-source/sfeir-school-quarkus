@@ -1,6 +1,6 @@
 # Lab 02.02 - Create a first entity and repository
 
-**Goal** Initialize the Quarkus project
+**Goal** Create a reactive Entity and a Repository that using it
 
 **Time** 30~45 minutes
 
