@@ -50,7 +50,7 @@ function conclusion() {
 }
 
 function bonusPartSlides() {
-  return ['09-part-bonus/01-Introduction.md'];
+  return ['09-part-bonus/01-configuration.md', '09-part-bonus/02-build.md', '09-part-bonus/03-logger.md'];
 }
 
 function formation() {
@@ -62,6 +62,7 @@ function formation() {
     ...thirdPartSlides(), //
     ...fourthPartSlides(), //
     ...conclusion(), //
+    ...bonusPartSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });
