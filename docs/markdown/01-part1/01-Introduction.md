@@ -108,7 +108,7 @@ https://quarkus.io/
 
 ## quarkus performance
 
-![](../../assets/images/performance_quarkus.png)
+![](./assets/images/performance_quarkus.png)
 
 <!-- .element: class="list-fragment" -->
 
@@ -125,7 +125,7 @@ Resident State Side
 
 ## Architecture
 
-![](../../assets/images/quarkus_reactive_core.png)
+![](./assets/images/quarkus_reactive_core.png)
 
 <!-- .element: class="credits" -->
 
@@ -145,7 +145,12 @@ Graal SDK : Graal compiler
 - November 2019, Quarkus 1.0
 - June 2021, Quarkus 2.0
 - April 26, 2023, Quarkus 3.0
-- December 6, 2023, Quarkus 3.6.1
+- July 5, 2023, Quarkus 3.2 (first LTS - not supported)
+- January 31, 2024, Quarkus 3.7
+- February 28, 2024, Quarkus 3.8 (LTS)
+- March 27, 2024, Quarkus 3.9
+- July 31, 2024, Quarkus 3.13
+- Next LTS in september 2024 : 3.15
 
 <br/>
 <!-- .element: class="list-fragment" -->

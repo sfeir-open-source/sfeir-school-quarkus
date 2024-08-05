@@ -4,10 +4,8 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
-    '00-school/speaker-sironneau_t.md',
-    '00-school/speaker-derhore_n.md',
-    '00-school/speaker-pena_a.md',
-    '00-school/Participant.md',
+    '00-school/speaker-barrere_w.md',
+    '00-school/speaker-desfosses_f.md',
     '00-school/01-objectives.md',
   ];
 }
