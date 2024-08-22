@@ -14,7 +14,7 @@ class CharactersResourceTest {
           .when().get("/api/characters")
           .then()
              .statusCode(200)
-             .body(is("{ \"name\": \"Luigi\"  }"));
+             .body(is("[{\"name\":\"Luigi\"}]"));
     }
 
 }
