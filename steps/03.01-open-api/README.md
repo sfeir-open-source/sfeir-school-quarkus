@@ -12,7 +12,7 @@ quarkus extension add smallrye-openapi
 ./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"
 ```
 
-- Go to http://localhost:8082/q/openapi
+- Go to http://localhost:8080/q/openapi
 - If you got an error restart your app
   - Hit 'q' in the console to close running app then :
 
@@ -22,7 +22,7 @@ quarkus dev
 ./mvnw quarkus:dev
 ```
 
-- Go to http://localhost:8082/q/dev
+- Go to http://localhost:8080/q/dev
 - Use annotations to enrich your documentation
   - @Operation
   - @APIResponse
