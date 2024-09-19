@@ -5,7 +5,7 @@
 - In reactive, repository return Uni object (Mono in Spring)
   - asynchronous, non blocking
 - You must subscribe on it
-- repository object, implements **`PanacheRepository<YourObject>`**
+- repository object, implements **`PanacheRepository<YourObjectEntity>`**
 
 ##==##
 
