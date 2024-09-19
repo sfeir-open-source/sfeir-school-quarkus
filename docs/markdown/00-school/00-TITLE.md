@@ -23,9 +23,9 @@ Credentials
 <!-- .element: class="center" -->
 <br>
 
-![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID
+![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> sfeir_guest
 
-![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD
+![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> iloveSFEIR123!
 
 ##==##
 

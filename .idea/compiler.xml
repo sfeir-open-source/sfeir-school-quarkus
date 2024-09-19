@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="karts-micro-service" />
+        <module name="karts-micro-service (2)" />
+        <module name="characters-micro-service (1)" />
+        <module name="karts-micro-service (3)" />
+        <module name="rest-racers" />
+        <module name="karts-micro-service (1)" />
+        <module name="characters-micro-service 2" />
+        <module name="characters-micro-service" />
+        <module name="characters-micro-service (6)" />
+        <module name="characters-micro-service (5)" />
+        <module name="characters-micro-service (4)" />
+        <module name="characters-micro-service (3)" />
+        <module name="characters-micro-service (7)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="characters-micro-service" options="-parameters" />
+      <module name="characters-micro-service (1)" options="-parameters" />
+      <module name="characters-micro-service (3)" options="-parameters" />
+      <module name="characters-micro-service (4)" options="-parameters" />
+      <module name="characters-micro-service (5)" options="-parameters" />
+      <module name="characters-micro-service (6)" options="-parameters" />
+      <module name="characters-micro-service (7)" options="-parameters" />
+      <module name="characters-micro-service 2" options="-parameters" />
+      <module name="karts-micro-service" options="-parameters" />
+      <module name="karts-micro-service (1)" options="-parameters" />
+      <module name="karts-micro-service (2)" options="-parameters" />
+      <module name="karts-micro-service (3)" options="-parameters" />
+      <module name="rest-racers" options="-parameters" />
+    </option>
+  </component>
+</project>
