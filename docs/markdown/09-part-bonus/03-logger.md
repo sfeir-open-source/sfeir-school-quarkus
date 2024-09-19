@@ -10,6 +10,7 @@ import io.quarkus.logging.Log;
 class MyService {
     public void doSomething() {
         Log.info("Simple!");
+        Log.infof("Hello %s !", "Toto");
     }
 }
 ```
