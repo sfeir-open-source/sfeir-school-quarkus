@@ -6,7 +6,6 @@
 
 ## Steps
 
-- Go to the super-app dir in the last zip
 - Use quarkus CLI to create the Quarkus project
 
 ```shell
