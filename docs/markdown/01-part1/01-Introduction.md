@@ -94,12 +94,12 @@ the result is serialized into the executable
 
 ## Build time details
 
-![Build time classic vs build time quarkus](./assets/images/classic_build_time_vs_quarkus_build_time.png)
+<img alt="Build time classic vs build time quarkus" height="70%" src="./assets/images/classic_build_time_vs_quarkus_build_time.png" width="70%"/>
 
 <!-- .element: class="list-fragment" -->
 
 References :
-https://quarkus.io/
+https://quarkus.io/container-first/
 ##==##
 
 <!-- .slide: class="with-code" -->

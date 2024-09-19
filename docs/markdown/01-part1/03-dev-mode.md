@@ -13,7 +13,6 @@ mvn quarkus:dev
 <br>
 
 - Hot reload
-- Debug port 5005 by default
 
 <br>
 <br>
