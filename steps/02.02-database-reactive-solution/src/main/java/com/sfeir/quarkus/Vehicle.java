@@ -6,7 +6,6 @@ import jakarta.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity(name = "Vehicle")
-@Cacheable
 public class Vehicle implements Serializable {
 
   @Id
