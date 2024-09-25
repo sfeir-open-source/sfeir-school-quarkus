@@ -112,8 +112,6 @@ https://quarkus.io/container-first/
 
 <!-- .element: class="list-fragment" -->
 
-Reference: devoxx 2022
-
 <!-- .element: class="credits" -->
 
 Notes:
