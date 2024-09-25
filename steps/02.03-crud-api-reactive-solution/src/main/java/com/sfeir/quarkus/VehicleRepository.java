@@ -1,4 +1,5 @@
 package com.sfeir.quarkus;
+
 import io.quarkus.hibernate.reactive.panache.PanacheRepository;
 import io.quarkus.hibernate.reactive.panache.common.WithSession;
 import io.smallrye.mutiny.Uni;
@@ -18,22 +19,22 @@ public class VehicleRepository implements PanacheRepository<Vehicle> {
     return persist(vehicle);
   }
 
-
   public Uni<Vehicle> findVehicleById(Long id) {
     return findById(id);
   }
-
 
   public Uni<Boolean> deleteVehicleById(Long id) {
     return deleteById(id);
   }
 
-
-  public void updateVehicle(Long id,Vehicle vehicle) {
-    Vehicle toUpdate = findById(id).await().indefinitely();
-    toUpdate.name = vehicle.name;
-    toUpdate.speed = vehicle.speed;
-    toUpdate.acceleration = vehicle.acceleration;
+  public Uni<Vehicle> updateVehicle(Long id, Vehicle vehicle) {
+    return findById(id)
+      .onItem().ifNotNull().transformToUni(toUpdate -> {
+        toUpdate.name = vehicle.name;
+        toUpdate.speed = vehicle.speed;
+        toUpdate.acceleration = vehicle.acceleration;
+        return persist(toUpdate);
+      });
   }
 }
 

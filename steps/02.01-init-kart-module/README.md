@@ -6,7 +6,6 @@
 
 ## Steps
 
-- Go to the super-app dir in the last zip
 - Use quarkus CLI to create the Quarkus project
 
 ```shell
@@ -17,7 +16,7 @@ quarkus create app \
 
 # or
 
-mvn io.quarkus:quarkus-maven-plugin:3.0.1.Final:create \
+mvn io.quarkus:quarkus-maven-plugin:3.13.3:create \
   -DprojectGroupId=com.sfeir.quarkus \
   -DprojectArtifactId=karts-micro-service \
   -DclassName="com.sfeir.quarkus.karts.KartsResource" \

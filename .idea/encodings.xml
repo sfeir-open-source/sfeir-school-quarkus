@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/steps/01.01-init-character-module-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.01-init-character-module-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.02-init-character-module-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.02-init-character-module-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.03-database-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.03-database-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.04-crud-api-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.04-crud-api-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.05-db-configuration-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.05-db-configuration-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.06-test-application-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/01.06-test-application-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.01-init-kart-module-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.01-init-kart-module-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.02-database-reactive-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.02-database-reactive-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.03-crud-api-reactive-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/02.03-crud-api-reactive-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/03.01-open-api-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/03.01-open-api-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/04.01-BFF-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/steps/04.01-BFF-solution/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

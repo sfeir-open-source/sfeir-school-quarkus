@@ -7,7 +7,7 @@
 Create the new module :
 
 ```shell
-mvn io.quarkus:quarkus-maven-plugin:2.16.6.Final:create \
+mvn io.quarkus:quarkus-maven-plugin:3.13.3:create \
   -DprojectGroupId=com.sfeir.quarkus \
   -DprojectArtifactId=rest-racers \
   -DclassName="com.sfeir.quarkus.racer.RacerResource" \

@@ -46,8 +46,7 @@ public class KartsResource {
   @Consumes(MediaType.APPLICATION_JSON)
   @WithTransaction
   public Uni<Response> update(@PathParam("id") Long id, Vehicle vehicle) {
-    vehicleService.update(id, vehicle);
-    return Uni.createFrom().item(Response.ok().build());
+    return vehicleService.update(id, vehicle).replaceWith(Response.ok().build());
   }
 
   @DELETE

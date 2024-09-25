@@ -8,6 +8,7 @@
 
 - Use https://code.quarkus.io to create the Quarkus project
 
+  - Quarkus LTS (3.8)
   - Group = "com.sfeir.quarkus"
   - Artifact = "characters-micro-service"
   - Build Tool = Maven

@@ -33,8 +33,8 @@ public class VehicleService {
     return vehicleRepository.createVehicle(vehicle);
   }
 
-  public void update(Long id, Vehicle vehicle) {
-    vehicleRepository.updateVehicle(id, vehicle);
+  public Uni<Vehicle> update(Long id, Vehicle vehicle) {
+    return vehicleRepository.updateVehicle(id, vehicle);
   }
 }
 

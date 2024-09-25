@@ -1,6 +1,5 @@
 package com.sfeir.quarkus.characters;
 
-import com.sfeir.quarkus.characters.Character;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
@@ -10,7 +9,6 @@ import java.util.Optional;
 
 @ApplicationScoped
 @Transactional
-
 public class CharacterService {
   @Transactional(Transactional.TxType.SUPPORTS)
   public Character random(){
