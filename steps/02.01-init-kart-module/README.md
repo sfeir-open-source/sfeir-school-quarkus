@@ -10,6 +10,7 @@
 
 ```shell
 quarkus create app \
+  --stream=3.8 \
   -x resteasy-reactive-jackson quarkus-smallrye-openapi \
   -o=. \
   com.sfeir.quarkus.karts:karts-micro-service
