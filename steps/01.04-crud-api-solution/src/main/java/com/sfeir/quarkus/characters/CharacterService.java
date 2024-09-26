@@ -2,6 +2,7 @@ package com.sfeir.quarkus.characters;
 
 import com.sfeir.quarkus.characters.Character;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 

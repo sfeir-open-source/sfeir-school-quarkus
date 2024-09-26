@@ -1,7 +1,7 @@
 package com.sfeir.quarkus.characters;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import io.smallrye.common.constraint.NotNull;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import jakarta.persistence.Column;
