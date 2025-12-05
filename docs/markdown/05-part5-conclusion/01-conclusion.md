@@ -19,6 +19,6 @@ or
 </div>
 <div style="text-align: center;">
 
-[link](https://forms.gle/F9j6KyNyLNd8TPC49)
+[](https://forms.gle/F9j6KyNyLNd8TPC49)
 
 </div>

@@ -111,9 +111,6 @@ https://quarkus.io/container-first/
 
 ![](./assets/images/performance_quarkus.png)
 
-<!-- .element: class="list-fragment" -->
-
-<!-- .element: class="credits" -->
 
 Notes:
 quantity of RAM used
@@ -126,8 +123,6 @@ Resident State Side
 ## Architecture
 
 ![](./assets/images/quarkus_reactive_core.png)
-
-<!-- .element: class="credits" -->
 
 Notes:
 Jandex : index of classe
