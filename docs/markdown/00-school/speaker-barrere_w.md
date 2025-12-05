@@ -1,13 +1,16 @@
 <!-- .slide: class="speaker-slide" -->
 
+<div class="speaker-slide">
+
 # Présentation
 
-![speaker](./assets/images/barrere.w.jpg)
+![](./assets/images/barrere.w.jpg 'speaker')
 
 <h2> William<span> Barrere</span></h2>
 
 ### Dev Fullstack
 
-<!-- .element: class="icon-rule icon-first" -->
+![](./assets/images/logo-sfeir-blanc.png 'company')
 
-![company](./assets/images/logo-sfeir-blanc.png)
+</div>
+

@@ -11,7 +11,8 @@ Notes:
 
 ## Feedback
 
-![full-center h-600](./assets/images/feedback_qrcode.png)
+![](./assets/images/feedback_qrcode.png 'h-600') 
+<!-- .element: class="full-center" -->
 
 <div style="text-align: center;">
 or 

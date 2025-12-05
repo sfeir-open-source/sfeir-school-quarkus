@@ -32,7 +32,8 @@
 - Quarkus Reactive is a extension => use it with other extension
 
 - Vert.x optimize the I/O
-  ##==##
+
+##==##
 
 <!-- .slide: class="with-code" -->
 

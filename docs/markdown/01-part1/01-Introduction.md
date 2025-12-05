@@ -100,6 +100,7 @@ the result is serialized into the executable
 
 References :
 https://quarkus.io/container-first/
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -117,6 +118,7 @@ https://quarkus.io/container-first/
 Notes:
 quantity of RAM used
 Resident State Side
+
 ##==##
 
 # Quarkus Features
@@ -131,6 +133,7 @@ Notes:
 Jandex : index of classe
 Gizmo : generate byte code
 Graal SDK : Graal compiler
+
 ##==##
 
 <!-- .slide: class="with-code" -->
