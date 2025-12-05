@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # Pre-requisites
 
@@ -18,7 +18,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # Quarkus
 
@@ -263,7 +263,7 @@ DevServices automatic provisioning
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # First micro-service
 
