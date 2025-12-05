@@ -11,13 +11,14 @@ Notes:
 
 ## Feedback
 
-![full-center h-600](./assets/images/feedback_qrcode.png)
+![](./assets/images/feedback_qrcode.png 'h-600') 
+<!-- .element: class="full-center" -->
 
 <div style="text-align: center;">
 or 
 </div>
 <div style="text-align: center;">
 
-[link](https://forms.gle/F9j6KyNyLNd8TPC49)
+[](https://forms.gle/F9j6KyNyLNd8TPC49)
 
 </div>

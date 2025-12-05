@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # Pre-requisites
 
@@ -18,7 +18,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # Quarkus
 
@@ -100,6 +100,7 @@ the result is serialized into the executable
 
 References :
 https://quarkus.io/container-first/
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -110,13 +111,11 @@ https://quarkus.io/container-first/
 
 ![](./assets/images/performance_quarkus.png)
 
-<!-- .element: class="list-fragment" -->
-
-<!-- .element: class="credits" -->
 
 Notes:
 quantity of RAM used
 Resident State Side
+
 ##==##
 
 # Quarkus Features
@@ -125,12 +124,11 @@ Resident State Side
 
 ![](./assets/images/quarkus_reactive_core.png)
 
-<!-- .element: class="credits" -->
-
 Notes:
 Jandex : index of classe
 Gizmo : generate byte code
 Graal SDK : Graal compiler
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -260,7 +258,7 @@ DevServices automatic provisioning
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" -->
 
 # First micro-service
 
